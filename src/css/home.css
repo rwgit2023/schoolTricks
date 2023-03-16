@@ -46,28 +46,6 @@ body {
     max-width: 500px;
 }
 
-.container .descricao {
-    color: #a8adb7;
-    width: 85%;
-    font-size: 18px;
-    margin: 30px 0;
-}
-
-.container .botao-contas {
-    background-color: #ff0021;
-    color: #ffffff;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    text-transform: uppercase;
-    transition: 0.5s all ease-in-out;
-}
-
-.container .botao-trailer:hover {
-    transform: scale(1.1)
-}
 
 .fundo-video {
     position: absolute;
@@ -92,23 +70,6 @@ body {
     left: 0;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
