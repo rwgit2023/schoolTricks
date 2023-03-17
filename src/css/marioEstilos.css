@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins';
+    overflow: hidden;
 }
 
 .cabecalho {
@@ -11,7 +12,8 @@ body {
 }
 
 .cabecalho .logo {
-    width: 65px;
+    width: 150px;
+    
 }
 
 .cabecalho .menu{
