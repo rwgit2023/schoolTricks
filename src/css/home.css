@@ -79,6 +79,26 @@ form label, form p, fieldset{
     width: 50%;
 }
 
+.enviar{
+    margin: 0 0 0 50px;
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    
+}
+
+.enviar:hover{
+    background-color: rgb(165, 49, 11);
+    transform: scale(1.2);
+
+}
 
 
 
