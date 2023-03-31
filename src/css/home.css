@@ -62,7 +62,7 @@ body {
 
 
 form{
-    margin: 40px 0;
+    margin: 150px 0;
     
     
 }
@@ -71,24 +71,26 @@ form label, form p, fieldset{
     color: white;
     font-size: 50px;
     margin: 0 0 0 50px;
+    
 }
 .input-padrao{
     display: block;
     margin: 0 30px 20px 50px;   
     padding: 15px 25px; 
     width: 50%;
+    border-radius: 50px;
 }
 
 .enviar{
-    margin: 0 0 0 50px;
-    width: 40%;
+    margin: 40px 0 0 250px;
+    width: 20%;
     padding: 15px 0;
-    background-color: orange;
+    background-color: rgb(76, 165, 96);
     color: white;
     font-weight: bold;
     font-size: 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: 1s all;
     cursor: pointer;
     
@@ -100,6 +102,13 @@ form label, form p, fieldset{
 
 }
 
+.modal {
+    position: fixed;
+    margin: -600px 0 0 1100px;
+    background-color: rgba(52, 52, 50, 0.749);
+    opacity: 0;
+    visibility: hidden;
+}
 
 
 
