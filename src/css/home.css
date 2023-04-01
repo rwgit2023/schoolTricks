@@ -104,10 +104,11 @@ form label, form p, fieldset{
 
 .modal {
     position: fixed;
-    margin: -600px 0 0 1100px;
-    background-color: rgba(52, 52, 50, 0.749);
-    opacity: 0;
-    visibility: hidden;
+    width: 600px;
+    margin: -650px 0 0 1100px;
+    /* background-color: rgba(52, 52, 50, 0.749); */
+    /* opacity: 0;
+    visibility: hidden;  */
 }
 
 
