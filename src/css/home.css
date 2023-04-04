@@ -81,7 +81,7 @@ form label, form p, fieldset{
     border-radius: 50px;
 }
 
-.enviar{
+.container .enviar{
     margin: 40px 0 0 250px;
     width: 20%;
     padding: 15px 0;
@@ -96,7 +96,7 @@ form label, form p, fieldset{
     
 }
 
-.enviar:hover{
+.container .enviar:hover{
     background-color: rgb(165, 49, 11);
     transform: scale(1.2);
 
@@ -105,10 +105,10 @@ form label, form p, fieldset{
 .modal {
     position: fixed;
     width: 600px;
-    margin: -650px 0 0 1100px;
-    /* background-color: rgba(52, 52, 50, 0.749); */
-    /* opacity: 0;
-    visibility: hidden;  */
+    margin: -600px 0 0 1100px;
+    background-color: rgba(52, 52, 50, 0.749);
+    opacity: 0;
+    visibility: hidden;
 }
 
 .conteudo-modal {
@@ -116,7 +116,6 @@ form label, form p, fieldset{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
     border-radius: 5px;
 }
 
