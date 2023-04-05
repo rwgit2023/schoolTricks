@@ -12,5 +12,6 @@ console.log(professora.src)
 botaoEnviar.addEventListener("click",() =>{
     console.log("Cliquei no enviar")
 
-    modal.classList("aberto");
+    modal.classList.add("aberto");
+    professora.setAttribute("src", linkDoVideo);
 })
