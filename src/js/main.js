@@ -1,8 +1,12 @@
 const botaoEnviar = document.querySelector('.enviar')
 
+
+
 const professora = document.getElementById("professora");
 const modal = document.querySelector(".modal");
 console.log(professora.src)
+const imagemProfessora = professora.src;
+
 
 
 
@@ -18,10 +22,10 @@ botaoEnviar.addEventListener('click', function(event) {
 
 
     modal.classList.add("aberto");
-    professora.setAttribute("src", linkImagem);
+    professora.setAttribute("src", imagemProfessora);
 
     // Seleciona o valor do campo de entrada de texto
-    const valorNomeDigitado = document.querySelector('#nome_sobrenome').value;
+    const valorNomeDigitado = document.querySelector('#nome_sobrenome').textContent;
     // Seleciona o valor do campo de entrada de texto
     const valoIidadeDigitado = document.getElementById('idade');
     // Seleciona o elemento de exibição de resultado
