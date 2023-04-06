@@ -117,6 +117,8 @@ form label, form p, fieldset{
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
+    /* gap: 15px; */
+    pointer-events: none;
 }
 
 
