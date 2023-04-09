@@ -145,5 +145,9 @@ form label, form p, fieldset{
     visibility: visible;
 }
 
+.modal .testButton {
 
+    color: red;
+    margin: -600px 0 0 1100px;
 
+}
