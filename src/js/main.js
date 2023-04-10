@@ -29,7 +29,7 @@ botaoEnviar.addEventListener('click', function(event) {
     // Seleciona o valor do campo de entrada de texto
     const valoIidadeDigitado = document.getElementById('idade');
     // Seleciona o elemento de exibição de resultado
-    const resultado = document.getElementById('resultado');
+    const resultado = document.getElementById('menssage');
     
     // Exibe o valor digitado na tela
     resultado.textContent = 'Olá ' + valorNomeDigitado +', você quer participar do meu desafio? Tenho certeza que vai arrazar';
