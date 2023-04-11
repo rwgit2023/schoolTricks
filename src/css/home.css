@@ -145,10 +145,12 @@ form label, form p, fieldset{
     visibility: visible;
 }
 
-.modal .menssage {
+.modal #menssage {
 
-    color: red;
-    margin: -200px 0 0 0px;
+    color:white;
+    font-size: 22px;
+    max-width: 50%;
+    margin: -270px 0 10px 110px;
     opacity: 2;
 
 }
