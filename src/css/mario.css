@@ -80,24 +80,44 @@ body {
 }
 
 
+table{
+    position: fixed;
+   
+    margin: -120px 0 0 100px;
+}
 
-form{
-    margin: 40px 0;
-    
-    
+thead{
+    background-color: rgb(51, 52, 54);
+    /* background-color: white; */
+    color: rgb(204, 248, 7);
+    font-size: 25px;
+    font-weight: bold;
 }
-form label, form p, fieldset{
-    display: block;
-    color: white;
-    font-size: 50px;
-    margin: 0 0 0 50px;
+
+td,th{
+    border: solid 5px rgb(68, 94, 29);
+    padding: 8px 15px;
 }
-.input-padrao{
-    display: block;
-    margin: 0 0px 20px 100px;   
-    padding: 15px 25px; 
-    width: 100%;
-}
+
+
+
+/* form{ */
+    /* margin: 40px 0; */
+/*      */
+/*      */
+/* } */
+/* form label, form p, fieldset{ */
+    /* display: block; */
+    /* color: white; */
+    /* font-size: 50px; */
+    /* margin: 0 0 0 50px; */
+/* } */
+/* .input-padrao{ */
+    /* display: block; */
+    /* margin: 0 0px 20px 100px;    */
+    /* padding: 15px 25px;  */
+    /* width: 100%; */
+/* } */
 
 
 
