@@ -105,7 +105,7 @@ form label, form p, fieldset{
 .modal {
     position: fixed;
     width: 600px;
-    margin: -600px 0 0 1100px;
+    margin: -550px 0 0 1050px;
     /* background-color: rgba(52, 52, 50, 0.749); */
     opacity: 0;
     visibility: hidden;
