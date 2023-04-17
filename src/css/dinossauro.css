@@ -66,6 +66,25 @@ body {
 }
 
 
+table{
+    position: fixed;
+   
+    margin: -120px 0 0 100px;
+}
+
+thead{
+    background-color: rgb(51, 52, 54);
+    /* background-color: white; */
+    color: rgb(204, 248, 7);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+td,th{
+    border: solid 5px rgb(68, 94, 29);
+    padding: 8px 15px;
+}
+
 
 
 
