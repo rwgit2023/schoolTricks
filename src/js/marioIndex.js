@@ -1,67 +1,36 @@
-/*
-1 - Quando o usuário clicar no botão de ver treier, devemos abrir a modal com o video do trailer.
+ // Apresenta o 1 numero no campo
+ const num1 = document.getElementById('num1');
+ const num2 = document.getElementById('num2');
+ const num3 = document.getElementById('num3');
+ const num4 = document.getElementById('num4');
+ const num5 = document.getElementById('num5');
+ const num6 = document.getElementById('num6');
+ const num7 = document.getElementById('num7');
+ const num8 = document.getElementById('num8');
 
-2 - Quando o usupario clicar no x.... devemos fechar a modal.
-
-
-1 - Quando o usuário clicar no botão de ver treier, devemos abrir a modal com o video do trailer.
-
-    - passo 1 - dar um jeito de pegar o elemento que representa o botao na tela usando o js.
-
-    - passo 2 - identificar quando que o usuário clicou.
-
-    - passo 3 - dar um jeito de pegar o elemento na modal do js
-
-    - passo 4 - abrir a modal na tela
-
-
-
-2 - Quando o usupario clicar no x.... devemos fechar a modal.
-
-      - passo 1 - dar um jeito de pegar o elemento que representa o botçao na tela usando o js.
-
-      - passo 2 - identificar quando que o usuário clicou no x.
-
-      - passo 3 - fechar a modal.
-
-*/
-
-//Para mostrar algo no console usa-se o console.log + oque você quer
-
-//console.log('Mostrar o Document',document);
+ 
+ // Exibe o valor digitado na tela
 
 
 
 
-//1 - Quando o usuário clicar no botão de ver treier, devemos abrir a modal com o video do trailer.
-
-    //- passo 1 - dar um jeito de pegar o elemento que representa o botçao na tela usando o js.
-    const botaoTrailer = document.querySelector(".botao-trailer");
-    const botaoFecharModal = document.querySelector(".fechar-modal");
-    
-    const video = document.getElementById("video");
-    const modal = document.querySelector(".modal");
-    console.log(video.src);
-    const linkDoVideo = video.src;
-    
+//  let numeroAleatorio = (Math.floor(Math.random() * 100) + 1);
+//  console.log(numeroAleatorio);
 
 
+num1.textContent = (Math.floor(Math.random() * 100) + 1) + '      +      ' + (Math.floor(Math.random() * 100) + 1)
 
-    botaoTrailer.addEventListener("click",() => {
-        console.log("Clicou no Botão de ver o Trailer");
+num2.textContent = (Math.floor(Math.random() * 100) + 1) + '      +      ' + (Math.floor(Math.random() * 100) + 1)
 
+num3.textContent = (Math.floor(Math.random() * 100) + 1) + '      +      ' + (Math.floor(Math.random() * 100) + 1)
 
-        modal.classList.add("aberto");
-        video.setAttribute("src", linkDoVideo);
+num4.textContent = (Math.floor(Math.random() * 100) + 1) + '      +      ' + (Math.floor(Math.random() * 100) + 1)
 
+num5.textContent = (Math.floor(Math.random() * 100) + 1) + '      +      ' + (Math.floor(Math.random() * 100) + 1)
 
-    });
+num6.textContent = (Math.floor(Math.random() * 100) + 1) + '      +      ' + (Math.floor(Math.random() * 100) + 1)
 
+num7.textContent = (Math.floor(Math.random() * 100) + 1) + '      +      ' + (Math.floor(Math.random() * 100) + 1)
 
-
-    botaoFecharModal.addEventListener("click", () => {
-        modal.classList.remove("aberto");
-        video.setAttribute("src" , "");
-        
-    });
+num8.textContent = (Math.floor(Math.random() * 100) + 1) + '      +      ' + (Math.floor(Math.random() * 100) + 1)
 
