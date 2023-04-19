@@ -56,7 +56,7 @@
 				<thead>
 
 					<tr>
-						<td><p id="num1"  style="z-index: 1;"> </p></td> </td>
+						<td><p id="num1"  style="z-index: 1;" onkeydown="if(event.keyCode === 13) { processInput(); }"> </p></td> </td>
 						<td><input type="resultado" required placeholder="  RESULTADO"></td>
 					</tr>
 
@@ -94,20 +94,8 @@
 						<td><input type="resultado" required placeholder="  RESULTADO"></td>
 					</tr>
 
-					<!-- <tr> -->
-						<!-- <td>VALOR15 + VALOR16</td> -->
-						<!-- <td>IMAGEM_SOM8</td> -->
-					<!-- </tr> -->
 
-					<!-- <tr> -->
-						<!-- <td>VALOR17 + VALOR18</td> -->
-						<!-- <td>IMAGEM_SOM9</td> -->
-					<!-- </tr> -->
-
-					<!-- <tr> -->
-						<!-- <td>VALOR19 + VALOR20</td> -->
-						<!-- <td>IMAGEM_SOM10</td> -->
-					<!-- </tr> -->
+					<button class="enviar" type="submit">Calcular</button>
 
 				</thead>
 
