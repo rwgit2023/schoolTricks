@@ -14,43 +14,43 @@
 
  
 
-num1 = (Math.floor(Math.random() * 100) + 1) 
-num2 = (Math.floor(Math.random() * 100) + 1)
+num1 = (Math.floor(Math.random() * 10) + 1) 
+num2 = (Math.floor(Math.random() * 10) + 1)
 spot1.textContent = (num1 + '      +      ' +num2 )
 var correto1 = num1 + num2
 
-num3 = (Math.floor(Math.random() * 100) + 1) 
-num4 = (Math.floor(Math.random() * 100) + 1)
+num3 = (Math.floor(Math.random() * 10) + 1) 
+num4 = (Math.floor(Math.random() * 10) + 1)
 spot2.textContent = (num3 + '      +      ' +num4 )
 var correto2 = num3 + num4
 
-num5 = (Math.floor(Math.random() * 100) + 1) 
-num6 = (Math.floor(Math.random() * 100) + 1)
+num5 = (Math.floor(Math.random() * 10) + 1) 
+num6 = (Math.floor(Math.random() * 10) + 1)
 spot3.textContent = (num5 + '      +      ' +num6 )
 var correto3 = num5 + num6
 
-num7 = (Math.floor(Math.random() * 100) + 1) 
-num8 = (Math.floor(Math.random() * 100) + 1)
+num7 = (Math.floor(Math.random() * 10) + 1) 
+num8 = (Math.floor(Math.random() * 10) + 1)
 spot4.textContent = (num7 + '      +      ' +num8 )
 var correto4 = num7 + num8
 
-num9 = (Math.floor(Math.random() * 100) + 1) 
-num10 = (Math.floor(Math.random() * 100) + 1)
+num9 = (Math.floor(Math.random() * 10) + 1) 
+num10 = (Math.floor(Math.random() * 10) + 1)
 spot5.textContent = (num9 + '      +      ' +num10 )
 var correto5 = num9 + num10
 
-num11 = (Math.floor(Math.random() * 100) + 1) 
-num12 = (Math.floor(Math.random() * 100) + 1)
+num11 = (Math.floor(Math.random() * 10) + 1) 
+num12 = (Math.floor(Math.random() * 10) + 1)
 spot6.textContent = (num11 + '      +      ' +num12 )
 var correto6 = num11 + num12
 
-num13 = (Math.floor(Math.random() * 100) + 1) 
-num14 = (Math.floor(Math.random() * 100) + 1)
+num13 = (Math.floor(Math.random() * 10) + 1) 
+num14 = (Math.floor(Math.random() * 10) + 1)
 spot7.textContent = (num13 + '      +      ' +num14 )
 var correto7 = num13 + num14
 
-num15 = (Math.floor(Math.random() * 100) + 1) 
-num16 = (Math.floor(Math.random() * 100) + 1)
+num15 = (Math.floor(Math.random() * 10) + 1) 
+num16 = (Math.floor(Math.random() * 10) + 1)
 spot8.textContent = (num15 + '      +      ' +num16 )
 var correto8 = num15 + num16
 
@@ -74,4 +74,22 @@ lista2 = []
 lista2 .push(resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8)
 console.log(lista2)
 
- 
+
+let i = 0;
+let pontos = 0;
+
+
+const botaoEnviar = document.querySelector('.calcular')
+
+ botaoEnviar.addEventListener('click', function(event) {
+
+    while (i < lista1.length && i < lista2.length) {
+        if (lista1[i] === lista2[i]) {
+          pontos += 10; // soma 10 pontos para cada posição igual
+        } else {
+          pontos -= 5; // subtrai 5 pontos para cada posição diferente
+        }
+        i++;
+      }
+
+ })
