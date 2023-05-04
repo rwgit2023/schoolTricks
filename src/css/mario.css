@@ -96,16 +96,9 @@ thead{
 
 td,th{
     border: solid 5px rgb(68, 94, 29);
-    padding: 8px 30px;
+    padding: 13px 80px;
 }
 
-.input-padrao{
-    display: block;
-    margin: 0 30px 20px 50px;   
-    padding: 15px 25px; 
-    width: 50%;
-    border-radius: 50px;
-}
 
 .container .calcular{
     margin: 550px 0 0 140px;
