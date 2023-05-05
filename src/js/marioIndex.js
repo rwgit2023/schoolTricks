@@ -58,19 +58,23 @@ i = 0
 
 // Captura resultados digitados
 
-
-
-
-
-
-
-
-
-
-
 //  -------------------------------------------------------------------------------------------
 // 
+
+
+
+
+const mario = document.getElementById("mario");
+const modal = document.querySelector(".modal");
+console.log(mario.src)
+const imagemMario = mario.src;
+
+
+
+
 function calcular() {
+  modal.classList.add("aberto");
+  professora.setAttribute("src", imagemMario);
 
   resultado1 = document.querySelector('#resp1_1').value;
   resultado2 = document.querySelector('#resp2_2').value;
