@@ -74,7 +74,8 @@ const imagemMario = mario.src;
 
 function calcular() {
   modal.classList.add("aberto");
-  professora.setAttribute("src", imagemMario);
+  const resultado = document.getElementById('menssage');
+  imagemMario.setAttribute("src", imagemMario);
 
   resultado1 = document.querySelector('#resp1_1').value;
   resultado2 = document.querySelector('#resp2_2').value;

@@ -34,27 +34,15 @@ body {
 .cabecalho nav li a:hover {
     background-color: #d5011d;
 }
-
+/* ------------------------------------------------------------------------------ */
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    height: calc(100vh - 132px);
-    padding: 0 30px 30px;
 }
-
-.container .espacamento{
-    max-width: 500px;
-}
-
-.container .descricao {
-    color: #a8adb7;
-    width: 85%;
-    font-size: 18px;
-    margin: 30px 0;
-}
-
+/* ------------------------------------------------------------------------------ */
 .fundo-video {
     position: absolute;
     z-index: -1;
@@ -78,15 +66,25 @@ body {
     left: 0;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
 }
-
-
-table{
-    position: fixed;
-   
-    margin: -120px 0 0 100px;
+/* ------------------------------------------------------------------------------ */
+.tabela{
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
-thead{
+.Conteudo_tabela{
+    margin: -50px auto;
+    
+}
+
+.Conteudo_tabela thead{
     background-color: rgb(51, 52, 54);
     /* background-color: white; */
     color: rgb(204, 248, 7);
@@ -94,15 +92,15 @@ thead{
     font-weight: bold;
 }
 
-td,th{
+
+.Conteudo_tabela td,th{
     border: solid 5px rgb(68, 94, 29);
     padding: 13px 80px;
 }
 
 
-.container .calcular{
-    margin: 550px 0 0 140px;
-    width: 20%;
+.Conteudo_tabela .calcular{
+    width: 10%;
     padding: 15px 0;
     background-color: rgb(76, 165, 96);
     color: white;
@@ -115,7 +113,7 @@ td,th{
     
 }
 
-.container .calcular:hover{
+.Conteudo_tabela .calcular:hover{
     background-color: rgb(165, 49, 11);
     transform: scale(1.2);
 
@@ -123,13 +121,18 @@ td,th{
 
 
 /* -------------------------------------------------------------------------------------- */
-.modal {
-    position: fixed;
-    width: 600px;
-    margin: -550px 0 0 1050px;
-    /* background-color: rgba(52, 52, 50, 0.749); */
-    opacity: 0;
-    visibility: hidden;
+.modal {  
+
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    
 }
 
 .conteudo-modal {
@@ -138,16 +141,27 @@ td,th{
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
-    /* gap: 15px; */
+    gap: 15px;
     pointer-events: none;
+    
+}
+
+#mario {
+    max-width: 800px;
+    max-height: 650px;
 }
 
 
 .modal iframe {
     border-width: 0;
-    width: 780px;
-    height: 600px;
+    width: 640px;
+    height: 360px;
+    margin: 350px 0 0 900px;
 }
+
+
+
+
 
 .modal.aberto {
     opacity: 1;
