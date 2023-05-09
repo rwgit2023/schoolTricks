@@ -63,7 +63,7 @@ i = 0
 
 
 
-
+const botaoEnviar = document.querySelector('.calcular')
 const mario = document.getElementById("mario");
 const modal = document.querySelector(".modal");
 console.log(mario.src)
@@ -72,10 +72,12 @@ const imagemMario = mario.src;
 
 
 
-function calcular() {
+botaoEnviar.addEventListener('click', function(event) {
+  console.log("Cliquei no enviar")
+  event.preventDefault();
   modal.classList.add("aberto");
   const resultado = document.getElementById('menssage');
-  imagemMario.setAttribute("src", imagemMario);
+  // imagemMario.setAttribute("src", imagemMario);
 
   resultado1 = document.querySelector('#resp1_1').value;
   resultado2 = document.querySelector('#resp2_2').value;
@@ -86,6 +88,7 @@ function calcular() {
   resultado7 = document.querySelector('#resp7_7').value;
   resultado8 = document.querySelector('#resp8_8').value;
  
+  
   let lista1 = []
   lista1.push(correto1, correto2, correto3, correto4, correto5, correto6, correto7, correto8)
   console.log('Respostas Corretas:', lista1)
@@ -119,7 +122,7 @@ function calcular() {
   console.log(pontos); // exibe o total de pontos obtidos
   console.log('Você acertou as questões: ', lista_acertos)
   console.log('Você errou as questões: ', lista_erros)
-}
+})
 
 
 
