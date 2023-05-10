@@ -105,23 +105,32 @@ botaoEnviar.addEventListener('click', function(event) {
 
   while (i < lista1.length && i < lista2.length) {
     if (lista1[i] == lista2[i]) {
-      pontos += 2; // soma 10 pontos para cada posição igual
+      pontos += 1; // soma 10 pontos para cada posição igual
       lista_acertos.push(lista1[i])
+      resultado[i].textContent = color
+
 
 
     } else {
-      pontos -= 1; // subtrai 5 pontos para cada posição diferente
+      // pontos -= 1; // subtrai 5 pontos para cada posição diferente
       lista_erros.push(lista1[i])
       if (pontos <=0){
         pontos = 0
       }
     }
-    i++;
+    i+=1;
   }
 
+  
+  
   console.log(pontos); // exibe o total de pontos obtidos
   console.log('Você acertou as questões: ', lista_acertos)
   console.log('Você errou as questões: ', lista_erros)
+
+
+
+
+
 })
 
 
