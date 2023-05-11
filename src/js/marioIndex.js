@@ -70,15 +70,6 @@ console.log(mario.src)
 const imagemMario = mario.src;
 const respostaC = document.getElementById('menssage');
 
-resultado1 = document.querySelector('#resp1_1').value;
-resultado2 = document.querySelector('#resp2_2').value;
-resultado3 = document.querySelector('#resp3_3').value;
-resultado4 = document.querySelector('#resp4_4').value;
-resultado5 = document.querySelector('#resp5_5').value;
-resultado6 = document.querySelector('#resp6_6').value;
-resultado7 = document.querySelector('#resp7_7').value;
-resultado8 = document.querySelector('#resp8_8').value;
-
 
 botaoEnviar.addEventListener('click', function(event) {
   console.log("Cliquei no enviar")
@@ -87,40 +78,67 @@ botaoEnviar.addEventListener('click', function(event) {
   const resultado = document.getElementById('menssage');
   // imagemMario.setAttribute("src", imagemMario);
 
+  resultado1 = document.querySelector('#resp1_1').value;
+  resultado2 = document.querySelector('#resp2_2').value;
+  resultado3 = document.querySelector('#resp3_3').value;
+  resultado4 = document.querySelector('#resp4_4').value;
+  resultado5 = document.querySelector('#resp5_5').value;
+  resultado6 = document.querySelector('#resp6_6').value;
+  resultado7 = document.querySelector('#resp7_7').value;
+  resultado8 = document.querySelector('#resp8_8').value;
+
   let lista1 = []
   lista1.push(correto1, correto2, correto3, correto4, correto5, correto6, correto7, correto8)
   console.log('Respostas Corretas:', lista1)
   
   lista2 = []
-  lista2 .push(resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8)
+  lista2.push(resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8)
   console.log('Respostas:',lista2)
   
   lista_erros = []
   lista_acertos = []
 
   let i = 0;
-  let pontos = 0;
+  
 
-  while (i < lista1.length) {
-    if (lista1[i] == lista2[i]) {
-      pontos += 1; 
-      lista_acertos.push(lista1[i])
-       
+  // while (i < lista1.length) {
+    // let pontos = 0;
+    // if (lista2[i] == lista1[i]) {
+      // pontos += 1; 
+      // lista_acertos.push(lista1[i])
+      //  
+    // } else {
+      // lista_erros.push(lista1[i])
+      // pontos -=1
 
+      // 
+    // }
+    // i+=1;
+  // }
 
-    } else {
-      lista_erros.push(lista1[i])
-      pontos -=1
+let pontuacao = 0;
 
-      
-    }
-    i+=1;
+for (let i = 0; i < lista1.length; i++) {
+  if (lista1[i] == lista2[i]) {
+    pontuacao++;
+    lista_acertos.push(lista1[i])
+  } else {
+    pontuacao--;
+    lista_erros.push(lista1[i])
   }
-  if (pontos = lista_acertos.length){
+}
+
+  if (pontuacao == 8){
+    console.log('CAIU NA BOA')
     respostaC.textContent = ('Meus parabéns você acertou tudo.')
   }
 
-  console.log(pontos); 
+  else{
+    respostaC.textContent = ('DEU RUIM.')
+    console.log('CAIU NESSE CASO')
+  }
+
+  console.log('Você obteve: ',pontuacao); 
   console.log('Você acertou as questões: ', lista_acertos)
   console.log('Você errou as questões: ', lista_erros)
 
