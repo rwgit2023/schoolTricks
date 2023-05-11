@@ -68,8 +68,16 @@ const mario = document.getElementById("mario");
 const modal = document.querySelector(".modal");
 console.log(mario.src)
 const imagemMario = mario.src;
+const respostaC = document.getElementById('menssage');
 
-
+resultado1 = document.querySelector('#resp1_1').value;
+resultado2 = document.querySelector('#resp2_2').value;
+resultado3 = document.querySelector('#resp3_3').value;
+resultado4 = document.querySelector('#resp4_4').value;
+resultado5 = document.querySelector('#resp5_5').value;
+resultado6 = document.querySelector('#resp6_6').value;
+resultado7 = document.querySelector('#resp7_7').value;
+resultado8 = document.querySelector('#resp8_8').value;
 
 
 botaoEnviar.addEventListener('click', function(event) {
@@ -79,16 +87,6 @@ botaoEnviar.addEventListener('click', function(event) {
   const resultado = document.getElementById('menssage');
   // imagemMario.setAttribute("src", imagemMario);
 
-  resultado1 = document.querySelector('#resp1_1').value;
-  resultado2 = document.querySelector('#resp2_2').value;
-  resultado3 = document.querySelector('#resp3_3').value;
-  resultado4 = document.querySelector('#resp4_4').value;
-  resultado5 = document.querySelector('#resp5_5').value;
-  resultado6 = document.querySelector('#resp6_6').value;
-  resultado7 = document.querySelector('#resp7_7').value;
-  resultado8 = document.querySelector('#resp8_8').value;
- 
-  
   let lista1 = []
   lista1.push(correto1, correto2, correto3, correto4, correto5, correto6, correto7, correto8)
   console.log('Respostas Corretas:', lista1)
@@ -103,31 +101,40 @@ botaoEnviar.addEventListener('click', function(event) {
   let i = 0;
   let pontos = 0;
 
-  while (i < lista1.length && i < lista2.length) {
+  while (i < lista1.length) {
     if (lista1[i] == lista2[i]) {
-      pontos += 1; // soma 10 pontos para cada posição igual
+      pontos += 1; 
       lista_acertos.push(lista1[i])
-      resultado[i].textContent = color
-
+       
 
 
     } else {
-      // pontos -= 1; // subtrai 5 pontos para cada posição diferente
       lista_erros.push(lista1[i])
-      if (pontos <=0){
-        pontos = 0
-      }
+      pontos -=1
+
+      
     }
     i+=1;
   }
+  if (pontos = lista_acertos.length){
+    respostaC.textContent = ('Meus parabéns você acertou tudo.')
+  }
 
-  
-  
-  console.log(pontos); // exibe o total de pontos obtidos
+  console.log(pontos); 
   console.log('Você acertou as questões: ', lista_acertos)
   console.log('Você errou as questões: ', lista_erros)
 
+  
 
+  // resultado1.value = ''
+  // resultado2.value = ''
+  // resultado3.value = ''
+  // resultado4.value = ''
+  // resultado5.value = ''
+  // resultado6.value = ''
+  // resultado7.value = ''
+  // resultado8.value = ''
+  
 
 
 
