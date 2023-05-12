@@ -135,7 +135,8 @@ body {
 
 .tabela .conteudo-modal {
     display: flex;
-    visibility:hidden
+    visibility:hidden;
+    pointer-events: none;
     
 }
 
@@ -144,6 +145,7 @@ body {
 .modal iframe {
     border-width: 0;
     margin: 40px 20px 0 0px;
+    pointer-events: none;
     
     
 }
@@ -155,10 +157,11 @@ body {
 
 .modal #menssage {
 
-    color:white;
-    font-size: 22px;
+    color: rgb(0, 0, 0);
+    text-shadow: #d5011d;
+    font-size: 40px;
     max-width: 50%;
-    margin: -570px 0 10px 110px;
+    margin: -500px 0 10px 355px;
     opacity: 2;
 
 }

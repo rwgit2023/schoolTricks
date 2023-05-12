@@ -101,21 +101,6 @@ botaoEnviar.addEventListener('click', function(event) {
   let i = 0;
   
 
-  // while (i < lista1.length) {
-    // let pontos = 0;
-    // if (lista2[i] == lista1[i]) {
-      // pontos += 1; 
-      // lista_acertos.push(lista1[i])
-      //  
-    // } else {
-      // lista_erros.push(lista1[i])
-      // pontos -=1
-
-      // 
-    // }
-    // i+=1;
-  // }
-
 let pontuacao = 0;
 
 for (let i = 0; i < lista1.length; i++) {
@@ -123,19 +108,21 @@ for (let i = 0; i < lista1.length; i++) {
     pontuacao++;
     lista_acertos.push(lista1[i])
   } else {
-    pontuacao--;
     lista_erros.push(lista1[i])
   }
 }
 
   if (pontuacao == 8){
-    console.log('CAIU NA BOA')
-    respostaC.textContent = ('Meus parabéns você acertou tudo.')
+    respostaC.textContent = ('Meus parabéns!!! Você acertou tudo.')
+  }
+
+  else if(pontuacao > 4){
+
+    respostaC.textContent = ('Você foi muito bem, continue assim!')
   }
 
   else{
-    respostaC.textContent = ('DEU RUIM.')
-    console.log('CAIU NESSE CASO')
+    respostaC.textContent = ('Meu garoto você esta quase lá.   Tente mais uma vez.')
   }
 
   console.log('Você obteve: ',pontuacao); 
@@ -144,14 +131,14 @@ for (let i = 0; i < lista1.length; i++) {
 
   
 
-  // resultado1.value = ''
-  // resultado2.value = ''
-  // resultado3.value = ''
-  // resultado4.value = ''
-  // resultado5.value = ''
-  // resultado6.value = ''
-  // resultado7.value = ''
-  // resultado8.value = ''
+  resp1_1.value = ' ';
+  resp2_2.value = ' ';
+  resp3_3.value = ' ';
+  resp4_4.value = ' ';
+  resp5_5.value = ' ';
+  resp6_6.value = ' ';
+  resp7_7.value = ' ';
+  resp8_8.value = ' ';
   
 
 
