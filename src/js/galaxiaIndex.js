@@ -63,18 +63,20 @@ i = 0
 
 
 
-
+const botaoEnviar = document.querySelector('.calcular')
 const mario = document.getElementById("mario");
 const modal = document.querySelector(".modal");
 console.log(mario.src)
 const imagemMario = mario.src;
+const respostaC = document.getElementById('menssage');
 
 
-
-
-function calcular() {
+botaoEnviar.addEventListener('click', function(event) {
+  console.log("Cliquei no enviar")
+  event.preventDefault();
   modal.classList.add("aberto");
-  professora.setAttribute("src", imagemMario);
+  const resultado = document.getElementById('menssage');
+  // imagemMario.setAttribute("src", imagemMario);
 
   resultado1 = document.querySelector('#resp1_1').value;
   resultado2 = document.querySelector('#resp2_2').value;
@@ -84,41 +86,64 @@ function calcular() {
   resultado6 = document.querySelector('#resp6_6').value;
   resultado7 = document.querySelector('#resp7_7').value;
   resultado8 = document.querySelector('#resp8_8').value;
- 
+
   let lista1 = []
   lista1.push(correto1, correto2, correto3, correto4, correto5, correto6, correto7, correto8)
   console.log('Respostas Corretas:', lista1)
   
   lista2 = []
-  lista2 .push(resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8)
+  lista2.push(resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8)
   console.log('Respostas:',lista2)
   
   lista_erros = []
   lista_acertos = []
 
   let i = 0;
-  let pontos = 0;
+  
 
-  while (i < lista1.length && i < lista2.length) {
-    if (lista1[i] == lista2[i]) {
-      pontos += 2; // soma 10 pontos para cada posição igual
-      lista_acertos.push(lista1[i])
+let pontuacao = 0;
 
+for (let i = 0; i < lista1.length; i++) {
+  if (lista1[i] == lista2[i]) {
+    pontuacao++;
+    lista_acertos.push(lista1[i])
+  } else {
+    lista_erros.push(lista1[i])
+  }
+}
 
-    } else {
-      pontos -= 1; // subtrai 5 pontos para cada posição diferente
-      lista_erros.push(lista1[i])
-      if (pontos <=0){
-        pontos = 0
-      }
-    }
-    i++;
+  if (pontuacao == 8){
+    respostaC.textContent = ('Meus parabéns!!! Você acertou tudo.')
   }
 
-  console.log(pontos); // exibe o total de pontos obtidos
+  else if(pontuacao > 4){
+
+    respostaC.textContent = ('Você foi muito bem, continue assim!')
+  }
+
+  else{
+    respostaC.textContent = ('Meu garoto você esta quase lá.   Tente mais uma vez.')
+  }
+
+  console.log('Você obteve: ',pontuacao); 
   console.log('Você acertou as questões: ', lista_acertos)
   console.log('Você errou as questões: ', lista_erros)
-}
+
+  
+
+  resp1_1.value = ' ';
+  resp2_2.value = ' ';
+  resp3_3.value = ' ';
+  resp4_4.value = ' ';
+  resp5_5.value = ' ';
+  resp6_6.value = ' ';
+  resp7_7.value = ' ';
+  resp8_8.value = ' ';
+  
+
+
+
+})
 
 
 
