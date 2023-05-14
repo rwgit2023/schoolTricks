@@ -122,7 +122,7 @@ for (let i = 0; i < lista1.length; i++) {
   }
 
   else{
-    respostaC.textContent = ('Meu garoto você esta quase lá.   Tente mais uma vez.')
+    respostaC.textContent = ('Você esta quase lá.   Tente mais uma vez.')
   }
 
   console.log('Você obteve: ',pontuacao); 

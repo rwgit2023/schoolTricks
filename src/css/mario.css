@@ -78,7 +78,7 @@ body {
 }
 
 .Conteudo_tabela{
-    margin: 15px 0 0 150px;
+    margin: -10px 0 0 150px;
     
 }
 
@@ -98,7 +98,7 @@ body {
 
 
 .tabela .calcular{
-    margin: 25px auto;
+    margin: 5px auto;
     width: 40%;
     padding: 15px 0;
     background-color: rgb(76, 165, 96);
