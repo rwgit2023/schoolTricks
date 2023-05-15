@@ -17,7 +17,15 @@
 num1 = (Math.floor(Math.random() * 10) + 1) 
 num2 = (Math.floor(Math.random() * 10) + 1)
 spot1.textContent = (num1 + '      +      ' +num2 )
+// spot1.innerHTML = '';
 var correto1 = num1 + num2
+// num1 = parseInt(input.value);
+// for (let i = 0; i < num1; i++) {
+  // const img = document.createElement("img");
+  // img.src = "./src/imagens/testefull.png";
+  // imagens.appendChild(img);
+// }
+
 
 num3 = (Math.floor(Math.random() * 10) + 1) 
 num4 = (Math.floor(Math.random() * 10) + 1)
