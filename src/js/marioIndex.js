@@ -86,21 +86,22 @@ botaoEnviar.addEventListener('click', function(event) {
   const resultado = document.getElementById('menssage');
   // imagemMario.setAttribute("src", imagemMario);
 
-  resultado1 = document.querySelector('#resp1_1').value;
-  resultado2 = document.querySelector('#resp2_2').value;
-  resultado3 = document.querySelector('#resp3_3').value;
-  resultado4 = document.querySelector('#resp4_4').value;
-  resultado5 = document.querySelector('#resp5_5').value;
-  resultado6 = document.querySelector('#resp6_6').value;
-  resultado7 = document.querySelector('#resp7_7').value;
-  resultado8 = document.querySelector('#resp8_8').value;
+  resultado1 = document.querySelector('#resp1_1');
+  resultado2 = document.querySelector('#resp2_2');
+  resultado3 = document.querySelector('#resp3_3');
+  resultado4 = document.querySelector('#resp4_4');
+  resultado5 = document.querySelector('#resp5_5');
+  resultado6 = document.querySelector('#resp6_6');
+  resultado7 = document.querySelector('#resp7_7');
+  resultado8 = document.querySelector('#resp8_8');
+
 
   let lista1 = []
   lista1.push(correto1, correto2, correto3, correto4, correto5, correto6, correto7, correto8)
   console.log('Respostas Corretas:', lista1)
   
   lista2 = []
-  lista2.push(resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8)
+  lista2.push(resultado1.value, resultado2.value, resultado3.value, resultado4.value, resultado5.value, resultado6.value, resultado7.value, resultado8.value)
   console.log('Respostas:',lista2)
   
   lista_erros = []
@@ -114,8 +115,13 @@ let pontuacao = 0;
 for (let i = 0; i < lista1.length; i++) {
   if (lista1[i] == lista2[i]) {
     pontuacao++;
+    cor1.classList.remove('red')
+    cor1.classList.add('green')
     lista_acertos.push(lista1[i])
+
   } else {
+    cor1.classList.remove('green')
+    cor1.classList.add('red')
     lista_erros.push(lista1[i])
   }
 }
