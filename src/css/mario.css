@@ -103,9 +103,9 @@ body {
 
 
 .tabela .calcular{
-    margin: 5px auto;
-    width: 40%;
-    padding: 15px 0;
+    margin: -400px 700px;
+    width: 20%;
+    padding: 25px 0;
     background-color: rgb(76, 165, 96);
     color: white;
     font-weight: bold;
@@ -114,6 +114,8 @@ body {
     border-radius: 50px;
     transition: 1s all;
     cursor: pointer;
+    position: absolute;
+    /* display: none; */
     
 }
 
@@ -122,6 +124,40 @@ body {
     transform: scale(1.2);
 
 }
+
+.ocultar{
+    visibility: hidden;
+    
+}
+
+.mostrar{
+    visibility: visible;
+
+}
+
+.tabela .limpar{
+    margin: -80px 850px;
+    width: 20%;
+    padding: 25px 0;
+    background-color: rgb(170, 13, 13);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    transition: 1s all;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+.tabela .limpar:hover{
+    background-color: rgb(165, 49, 11);
+    transform: scale(1.2);
+
+}
+
+
 
 
 .green {
@@ -133,6 +169,9 @@ body {
     background-color: red;
     
   }
+
+ 
+  
 
 /* -------------------------------------------------------------------------------------- */
 .modal {  
