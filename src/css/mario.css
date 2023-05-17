@@ -88,8 +88,13 @@ body {
     color: rgb(204, 248, 7);
     font-size: 25px;
     font-weight: bold;
+    /* padding: 20px; */
 }
 
+.Conteudo_tabela thead input{
+    padding: 5px;
+    text-align: center;
+}
 
 .Conteudo_tabela td,th{
     border: solid 5px rgb(68, 94, 29);

@@ -7,6 +7,8 @@
  const spot6 = document.getElementById('num6');
  const spot7 = document.getElementById('num7');
  const spot8 = document.getElementById('num8');
+ const spot9 = document.getElementById('num9');
+ const spot10 = document.getElementById('num10');
 
  
  // Exibe o valor digitado na tela
@@ -62,6 +64,16 @@ num16 = (Math.floor(Math.random() * 10) + 1)
 spot8.textContent = (num15 + '      +      ' +num16 )
 var correto8 = num15 + num16
 
+num17 = (Math.floor(Math.random() * 10) + 1) 
+num18 = (Math.floor(Math.random() * 10) + 1)
+spot9.textContent = (num17 + '      +      ' +num18 )
+var correto9 = num15 + num16
+
+num19 = (Math.floor(Math.random() * 10) + 1) 
+num20 = (Math.floor(Math.random() * 10) + 1)
+spot10.textContent = (num19 + '      +      ' +num20 )
+var correto10 = num15 + num16
+
 i = 0
 
 // Captura resultados digitados
@@ -77,7 +89,7 @@ const modal = document.querySelector(".modal");
 console.log(mario.src)
 const imagemMario = mario.src;
 const respostaC = document.getElementById('menssage');
-
+ 
 
 botaoEnviar.addEventListener('click', function(event) {
   console.log("Cliquei no enviar")
@@ -86,51 +98,66 @@ botaoEnviar.addEventListener('click', function(event) {
   const resultado = document.getElementById('menssage');
   // imagemMario.setAttribute("src", imagemMario);
 
-  resultado1 = document.querySelector('#resp1_1');
-  resultado2 = document.querySelector('#resp2_2');
-  resultado3 = document.querySelector('#resp3_3');
-  resultado4 = document.querySelector('#resp4_4');
-  resultado5 = document.querySelector('#resp5_5');
-  resultado6 = document.querySelector('#resp6_6');
-  resultado7 = document.querySelector('#resp7_7');
-  resultado8 = document.querySelector('#resp8_8');
+  resultado1 = document.querySelector('#resp1');
+  resultado2 = document.querySelector('#resp2');
+  resultado3 = document.querySelector('#resp3');
+  resultado4 = document.querySelector('#resp4');
+  resultado5 = document.querySelector('#resp5');
+  resultado6 = document.querySelector('#resp6');
+  resultado7 = document.querySelector('#resp7');
+  resultado8 = document.querySelector('#resp8');
+  resultado9 = document.querySelector('#resp9');
+  resultado10 = document.querySelector('#resp10');
+ 
+   // for (let i = 1; i <= 8; i++){
+   // resultado[i] = document.getElementById('resp[i]');
+   // lista1.push(correto[i]);
+   // lista2.push(resultado[i].value)
+ // }
 
-
+  
   let lista1 = []
-  lista1.push(correto1, correto2, correto3, correto4, correto5, correto6, correto7, correto8)
+  lista1.push(correto1, correto2, correto3, correto4, correto5, correto6, correto7, correto8,correto9,correto10)
   console.log('Respostas Corretas:', lista1)
   
-  lista2 = []
-  lista2.push(resultado1.value, resultado2.value, resultado3.value, resultado4.value, resultado5.value, resultado6.value, resultado7.value, resultado8.value)
+  let lista2 = []
+  lista2.push(resultado1.value, resultado2.value, resultado3.value, resultado4.value, resultado5.value, resultado6.value, resultado7.value, resultado8.value,resultado9.value,resultado10.value)
   console.log('Respostas:',lista2)
+
+  let listap = []
+  listap.push(resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8,resultado9,resultado10)
+  console.log('LISTA DOIDA', listap)
+
   
   lista_erros = []
   lista_acertos = []
 
-  let i = 0;
-  
 
+// lista_posicao[1].classList.remove('red')
+// listap[1].classList.add('red')
+// 
 let pontuacao = 0;
 
 for (let i = 0; i < lista1.length; i++) {
   if (lista1[i] == lista2[i]) {
     pontuacao++;
-    cor1.classList.remove('red')
-    cor1.classList.add('green')
+    listap[i].classList.add('green')
     lista_acertos.push(lista1[i])
 
   } else {
-    cor1.classList.remove('green')
-    cor1.classList.add('red')
+    listap[i].classList.add('red')
+    
     lista_erros.push(lista1[i])
   }
 }
 
-  if (pontuacao == 8){
+console.log(pontuacao)
+
+  if (pontuacao == 10){
     respostaC.textContent = ('Meus parabéns!!! Você acertou tudo.')
   }
 
-  else if(pontuacao > 4){
+  else if(pontuacao > 6){
 
     respostaC.textContent = ('Você foi muito bem, continue assim!')
   }
@@ -145,14 +172,16 @@ for (let i = 0; i < lista1.length; i++) {
 
   
 
-  resp1_1.value = ' ';
-  resp2_2.value = ' ';
-  resp3_3.value = ' ';
-  resp4_4.value = ' ';
-  resp5_5.value = ' ';
-  resp6_6.value = ' ';
-  resp7_7.value = ' ';
-  resp8_8.value = ' ';
+  // resp1.value = ' ';
+  // resp2.value = ' ';
+  // resp3.value = ' ';
+  // resp4.value = ' ';
+  // resp5.value = ' ';
+  // resp6.value = ' ';
+  // resp7.value = ' ';
+  // resp8.value = ' ';
+  // resp9.value = ' ';
+  // resp10.value = ' ';
   
 
 
