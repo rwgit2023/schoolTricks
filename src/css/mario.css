@@ -112,7 +112,7 @@ body {
     font-size: 18px;
     border: none;
     border-radius: 50px;
-    transition: 1s all;
+    transition: 0.3s all;
     cursor: pointer;
     position: absolute;
     /* display: none; */
@@ -127,11 +127,16 @@ body {
 
 .ocultar{
     visibility: hidden;
+    opacity: 0;
+    
     
 }
+    
+
 
 .mostrar{
     visibility: visible;
+    opacity: 1;
 
 }
 
@@ -148,6 +153,8 @@ body {
     transition: 1s all;
     cursor: pointer;
     position: absolute;
+    display: none;
+    
 
 }
 

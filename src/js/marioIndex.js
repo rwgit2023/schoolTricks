@@ -84,6 +84,7 @@ i = 0
 
 
 const botaoEnviar = document.querySelector('.calcular')
+const botaoLimpar = document.querySelector('.limpar')
 const mario = document.getElementById("mario");
 const modal = document.querySelector(".modal");
 console.log(mario.src)
@@ -97,6 +98,7 @@ botaoEnviar.addEventListener('click', function (event) {
   modal.classList.add("aberto");
   const resultado = document.getElementById('menssage');
   botaoEnviar.classList.add('ocultar')
+  botaoLimpar.style.display = "inline-block";
   // imagemMario.setAttribute("src", imagemMario);
 
   resultado1 = document.querySelector('#resp1');
@@ -186,12 +188,12 @@ botaoEnviar.addEventListener('click', function (event) {
 
 
 
-const botaoLimpar = document.querySelector('.limpar')
+
 
 botaoLimpar.addEventListener('click', function (event) {
   console.log("Cliquei no limpar")
   event.preventDefault();
-  modal.classList.add("ocultar");
+  // modal.classList.add("ocultar");
 
 
   resp1.value = ' ';
@@ -217,8 +219,11 @@ botaoLimpar.addEventListener('click', function (event) {
   resultado10.classList.remove('green','red')
 
 
+  botaoEnviar.classList.add('aberto')
   botaoLimpar.classList.add('ocultar')
-  botaoEnviar.style.display = 'block';
+  
+
+
 
   
 
