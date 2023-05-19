@@ -49,30 +49,30 @@ num10 = (Math.floor(Math.random() * 10) + 1)
 spot5.textContent = (num9 + '      +      ' + num10)
 var correto5 = num9 + num10
 
-num11 = (Math.floor(Math.random() * 10) + 1)
-num12 = (Math.floor(Math.random() * 10) + 1)
-spot6.textContent = (num11 + '      +      ' + num12)
-var correto6 = num11 + num12
+// num11 = (Math.floor(Math.random() * 10) + 1)
+// num12 = (Math.floor(Math.random() * 10) + 1)
+// spot6.textContent = (num11 + '      +      ' + num12)
+// var correto6 = num11 + num12
 
-num13 = (Math.floor(Math.random() * 10) + 1)
-num14 = (Math.floor(Math.random() * 10) + 1)
-spot7.textContent = (num13 + '      +      ' + num14)
-var correto7 = num13 + num14
+// num13 = (Math.floor(Math.random() * 10) + 1)
+// num14 = (Math.floor(Math.random() * 10) + 1)
+// spot7.textContent = (num13 + '      +      ' + num14)
+// var correto7 = num13 + num14
 
-num15 = (Math.floor(Math.random() * 10) + 1)
-num16 = (Math.floor(Math.random() * 10) + 1)
-spot8.textContent = (num15 + '      +      ' + num16)
-var correto8 = num15 + num16
+// num15 = (Math.floor(Math.random() * 10) + 1)
+// num16 = (Math.floor(Math.random() * 10) + 1)
+// spot8.textContent = (num15 + '      +      ' + num16)
+// var correto8 = num15 + num16
 
-num17 = (Math.floor(Math.random() * 10) + 1)
-num18 = (Math.floor(Math.random() * 10) + 1)
-spot9.textContent = (num17 + '      +      ' + num18)
-var correto9 = num17 + num18
+// num17 = (Math.floor(Math.random() * 10) + 1)
+// num18 = (Math.floor(Math.random() * 10) + 1)
+// spot9.textContent = (num17 + '      +      ' + num18)
+// var correto9 = num17 + num18
 
-num19 = (Math.floor(Math.random() * 10) + 1)
-num20 = (Math.floor(Math.random() * 10) + 1)
-spot10.textContent = (num19 + '      +      ' + num20)
-var correto10 = num19 + num20
+// num19 = (Math.floor(Math.random() * 10) + 1)
+// num20 = (Math.floor(Math.random() * 10) + 1)
+// spot10.textContent = (num19 + '      +      ' + num20)
+// var correto10 = num19 + num20
 
 i = 0
 
@@ -106,11 +106,11 @@ botaoEnviar.addEventListener('click', function (event) {
   resultado3 = document.querySelector('#resp3');
   resultado4 = document.querySelector('#resp4');
   resultado5 = document.querySelector('#resp5');
-  resultado6 = document.querySelector('#resp6');
-  resultado7 = document.querySelector('#resp7');
-  resultado8 = document.querySelector('#resp8');
-  resultado9 = document.querySelector('#resp9');
-  resultado10 = document.querySelector('#resp10');
+  // resultado6 = document.querySelector('#resp6');
+  // resultado7 = document.querySelector('#resp7');
+  // resultado8 = document.querySelector('#resp8');
+  // resultado9 = document.querySelector('#resp9');
+  // resultado10 = document.querySelector('#resp10');
 
   // for (let i = 1; i <= 8; i++){
   // resultado[i] = document.getElementById('resp[i]');
@@ -120,15 +120,17 @@ botaoEnviar.addEventListener('click', function (event) {
 
 
   let lista1 = []
-  lista1.push(correto1, correto2, correto3, correto4, correto5, correto6, correto7, correto8, correto9, correto10)
+  lista1.push(correto1, correto2, correto3, correto4, correto5)
+    // , correto6, correto7, correto8, correto9, correto10)
   console.log('Respostas Corretas:', lista1)
 
   let lista2 = []
-  lista2.push(resultado1.value, resultado2.value, resultado3.value, resultado4.value, resultado5.value, resultado6.value, resultado7.value, resultado8.value, resultado9.value, resultado10.value)
+   lista2.push(resultado1.value, resultado2.value, resultado3.value, resultado4.value, resultado5.value) //resultado6.value, resultado7.value, resultado8.value, resultado9.value, resultado10.value)
   console.log('Respostas:', lista2)
 
   let listap = []
-  listap.push(resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8, resultado9, resultado10)
+  listap.push(resultado1, resultado2, resultado3, resultado4, resultado5)
+  // , resultado6, resultado7, resultado8, resultado9, resultado10)
   console.log('LISTA DOIDA', listap)
 
 
@@ -156,11 +158,11 @@ botaoEnviar.addEventListener('click', function (event) {
 
   console.log(pontuacao)
 
-  if (pontuacao == 10) {
+  if (pontuacao == 5) {
     respostaC.textContent = ('Meus parabéns!!! Você acertou tudo.')
   }
 
-  else if (pontuacao > 6) {
+  else if (pontuacao > 3) {
 
     respostaC.textContent = ('Você foi muito bem, continue assim!')
   }
@@ -201,22 +203,22 @@ botaoLimpar.addEventListener('click', function (event) {
   resp3.value = ' ';
   resp4.value = ' ';
   resp5.value = ' ';
-  resp6.value = ' ';
-  resp7.value = ' ';
-  resp8.value = ' ';
-  resp9.value = ' ';
-  resp10.value = ' ';
+  // resp6.value = ' ';
+  // resp7.value = ' ';
+  // resp8.value = ' ';
+  // resp9.value = ' ';
+  // resp10.value = ' ';
 
   resultado1.classList.remove('green','red')
   resultado2.classList.remove('green','red')
   resultado3.classList.remove('green','red')
   resultado4.classList.remove('green','red')
   resultado5.classList.remove('green','red')
-  resultado6.classList.remove('green','red')
-  resultado7.classList.remove('green','red')
-  resultado8.classList.remove('green','red')
-  resultado9.classList.remove('green','red')
-  resultado10.classList.remove('green','red')
+  // resultado6.classList.remove('green','red')
+  // resultado7.classList.remove('green','red')
+  // resultado8.classList.remove('green','red')
+  // resultado9.classList.remove('green','red')
+  // resultado10.classList.remove('green','red')
 
 
   botaoEnviar.classList.add('aberto')
