@@ -13,10 +13,10 @@
 
 		<link rel="stylesheet" href="./src/css/reset.css">
 
-		<link rel="stylesheet" href="./src/css/galaxia.css">
+		<link rel="stylesheet" href="./src/css/mario.css">
 
 
-		<link rel="stylesheet" href="./src/css/galaxiaResponsivo.css">
+		<link rel="stylesheet" href="./src/css/marioResponsivo.css">
 
 		<title>School Tricks</title>
 	</head>
@@ -25,7 +25,7 @@
 
 		<div class="fundo-video">
 			<video class="video" autoplay loop muted>
-				<source src="./src/video/The Planet Song - 8 Planets of the Solar System Song for Kids - KidsLearningTube (1).mp4" type="video/mp4" />
+				<source src="./src/video/video-mario.mp4" type="video/mp4" />
 			</video>
 		</div>
 
@@ -38,79 +38,80 @@
 				<ul class="menu">
 					<li><a href="./home.html">   Home   </a></li>
 					<li><a href="dinossauro.html">Dinossauro</a></li>
-					<li><a href="mario.html">Mario</a></li>
+					<li><a href="galaxia.html"> Galaxia </a></li>
 				</ul>
 			</nav>
 		</header>
 		<main class="container">
 
-			<table>
+			<div class="tabela">
+				<div class="Conteudo_tabela">
 
-				<thead>
+					<table>
+						<thead>
+							<tr>
+								<td><p id="num1" style="z-index: 1;"> </p></td>
+								<td><input id = 'resp1' type="number" required placeholder="  Resposta"></td>
+							</tr>
+							<tr>
+								<td><p id="num2" style="z-index: 1;"> </p></td>
+								<td><input id = 'resp2' type="number" required placeholder="  Resposta"></td>
+							</tr>
+							<tr>
+								<td><p id="num3" style="z-index: 1;"> </p></td>
+								<td><input id = 'resp3' type="number" required placeholder="  Resposta"></td>
+							</tr>
+							<tr>
+								<td><p id="num4" style="z-index: 1;"> </p></td>
+								<td><input id = 'resp4' type="number" required placeholder="  Resposta"></td>
+							</tr>
+							<tr>
+								<td><p id="num5" style="z-index: 1;"> </p></td>
+								<td><input id = 'resp5' type="number" required placeholder="  Resposta"></td>
+							</tr>
+							<!-- <tr>
+								<td><p id="num6" style="z-index: 1;"> </p></td>
+								<td><input id = 'resp6' type="number" required placeholder="  Resposta"></td>
+							</tr>
+							<tr>
+								<td><p id="num7" style="z-index: 1;"> </p></td>
+								<td><input id = 'resp7' type="number" required placeholder="  Resposta"></td>
+							</tr>
+							<tr>
+								<td><p id="num8" style="z-index: 1;"> </p></td>
+								<td><input id = 'resp8' type="number" required placeholder="  Resposta"></td>
+							</tr>
+							<tr>
+								<td><p id="num9" style="z-index: 1;"> </p></td>
+								<td><input id = 'resp9' type="number" required placeholder="  Resposta"></td>
+							</tr>
+							<tr>
+								<td><p id="num10" style="z-index: 1;"> </p></td>
+								<td><input id = 'resp10' type="number" required placeholder="  Resposta"></td>
+							</tr> -->
+							
+						</thead>
+					</table>
+				</div>
 
-					<tr>
-						<td id="random-number">NUMEROS</td>
-						<td>RESULTADO</td>
-					</tr>
-
-					<tr>
-						<td> + 5</td>
-						<td>IMAGEM_SOM1</td>
-					</tr>
-
-					<tr>
-						<td>VALOR3 + VALOR4</td>
-						<td>IMAGEM_SOM2</td>
-					</tr>
-
-					<tr>
-						<td>VALOR5 + VALOR6</td>
-						<td>IMAGEM_SOM3</td>
-					</tr>
-
-					<tr>
-						<td>VALOR7 + VALOR8</td>
-						<td>IMAGEM_SOM4</td>
-					</tr>
-
-					<tr>
-						<td>VALOR9 + VALOR10</td>
-						<td>IMAGEM_SOM5</td>
-					</tr>
-					<tr>
-						<td>VALOR11 + VALOR12</td>
-						<td>IMAGEM_SOM6</td>
-					</tr>
-
-					<tr>
-						<td>VALOR13 + VALOR14</td>
-						<td>IMAGEM_SOM7</td>
-					</tr>
-
-					<!-- <tr> -->
-						<!-- <td>VALOR15 + VALOR16</td> -->
-						<!-- <td>IMAGEM_SOM8</td> -->
-					<!-- </tr> -->
-
-					<!-- <tr> -->
-						<!-- <td>VALOR17 + VALOR18</td> -->
-						<!-- <td>IMAGEM_SOM9</td> -->
-					<!-- </tr> -->
-
-					<!-- <tr> -->
-						<!-- <td>VALOR19 + VALOR20</td> -->
-						<!-- <td>IMAGEM_SOM10</td> -->
-					<!-- </tr> -->
-
-				</thead>
+				<button class="calcular" type="submit">Calcular</button>
+				<button class="limpar" type="submit">Limpar</button>
+																															
+			</div>
 
 
-
-
-			</table>
-
-			
-
+			<div class="modal">
+				<div class="conteudo-modal">
+					<iframe   width="1000" height="550" id = "mario" src="./src/imagens/mario.png"  style="z-index: 0;" title = "Imagem Mario" frameborder = '1' 
+					allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  ></iframe>
+				
+					<p id="menssage" style="z-index: 1;"> </p>
+					
+					
+				</div>
+				
+				
+			</div>
 		</main>
 		<script src="./src/js/galaxiaIndex.js"></script>
 	</body>
