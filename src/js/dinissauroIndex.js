@@ -224,7 +224,7 @@ botaoLimpar.addEventListener('click', function (event) {
   botaoEnviar.classList.add('aberto')
   botaoLimpar.classList.add('ocultar')
   
-
+  window.location.href = './galaxia.html'; // muda de página
 
 
   

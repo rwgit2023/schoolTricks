@@ -223,7 +223,7 @@ botaoLimpar.addEventListener('click', function (event) {
   
 
 
-
+  window.location.href = './dinossauro.html'; // muda de página
   
 
 
