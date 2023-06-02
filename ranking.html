@@ -1,12 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="shortcut icon" href="./src/imagens/logo_preto.ico" type="image/x-icon">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="./src/css/reset.css">
+
+		<link rel="stylesheet" href="./src/css/reset.css">
+
+
+		<link rel="stylesheet" href="./src/css/rankingResponsivo.css">
+
+		<title>School Tricks</title>
+	</head>
+	<body onload="get_data()">
+
+		<div vw class="enabled">
+			<div vw-access-button class="active"></div>
+			<div vw-plugin-wrapper>
+			  <div class="vw-plugin-top-wrapper"></div>
+			</div>
+		  </div>
+		  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+		  <script>
+			new window.VLibras.Widget('https://vlibras.gov.br/app');
+		  </script>
+
+		<header class="header">
+
+
+
+			<a href="index.html">
+				<img class="logo" src="./src/midia/image/rw.png" alt="logo empresa" />
+			</a>
+
+			<nav>
+				<ul class="menu">
+					<li><a href="./ingressar.html">Ingressar</a></li>
+                    
+				</ul>
+			</nav>
+		</header>
+
+
+
+		<main class="container main">
+            
+            <ul class="histórico">
+                <li id="agendamento_reuniao">   
+                    <h2>Agendadas</h2>
+					
+					
+					
+					
+                        
+                </li>
+                
+                <li id="historico_reuniao">
+                    <h2>Histórico</h2>
+					<!-- tem coisa sendo injetada aqui, via JS-->
+                </li>
+
+            </ul>
+        </main>
+
+
+
+		<footer>
+            <p 
+                class="rodape">&copy; Copyright Ronan Cassemiro - 2023
+				
+
+            </p>
+        </footer>
+	
+		<script src="./src/js/index.js"></script>
+		<script src="./src/js/service.js"></script>
+	</body>
 </html>
