@@ -216,16 +216,18 @@ body {
     visibility: visible;
 }
 
+
 .modal #menssage {
 
     color: rgb(0, 0, 0);
     text-shadow: #d5011d;
     font-size: 40px;
     max-width: 50%;
-    margin: -500px 0 10px 335px;
+    margin: -480px 0 10px 440px;
     opacity: 2;
 
 }
+
 
 
 
