@@ -13,75 +13,68 @@
 
 		<link rel="stylesheet" href="./src/css/reset.css">
 
-		<link rel="stylesheet" href="./src/css/reset.css">
+		<link rel="stylesheet" href="./src/css/home.css">
 
 
-		<link rel="stylesheet" href="./src/css/rankingResponsivo.css">
+		<link rel="stylesheet" href="./src/css/homeResponsivo.css">
 
 		<title>School Tricks</title>
 	</head>
-	<body onload="get_data()">
-
-		<div vw class="enabled">
-			<div vw-access-button class="active"></div>
-			<div vw-plugin-wrapper>
-			  <div class="vw-plugin-top-wrapper"></div>
-			</div>
-		  </div>
-		  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-		  <script>
-			new window.VLibras.Widget('https://vlibras.gov.br/app');
-		  </script>
-
-		<header class="header">
+	<body>
 
 
+		<div class="fundo-video">
+			<img src="./src/imagens/home.jpeg" alt="home-fundo">
+		</div>
 
-			<a href="index.html">
-				<img class="logo" src="./src/midia/image/rw.png" alt="logo empresa" />
+		<header class="cabecalho">
+			<a>
+                
+				<img class="logo" src="./src/imagens/logo_preto.png" alt="logo-projeto" />
 			</a>
-
 			<nav>
 				<ul class="menu">
-					<li><a href="./ingressar.html">Ingressar</a></li>
-                    
+					<li><a href="./mario.html">Mario</a></li>
+					<li><a href="./dinossauro.html">Dinossauro</a></li>
+					<li><a href="galaxia.html"> Galaxia </a></li>
+					<li><a href="ranking.html"> Ranking </a></li>
 				</ul>
 			</nav>
 		</header>
 
+		<main class="container">
+			
+			<form >
+                <label for="nome_sobrenome">Como você se chama?</label>
+                <input type="text" id="nome_sobrenome" class="input-padrao" required placeholder="Nome Completo">
 
+				<label for="idade">Quantos anos você tem?</label>
+                <input type="text" id="idade" class="input-padrao" required placeholder="Idade">
+				
+				<button class="enviar" type="submit">Enviar</button>
+			</form>
 
-		<main class="container main">
-            
-            <ul class="histórico">
-                <li id="agendamento_reuniao">   
-                    <h2>Agendadas</h2>
+			<p id="resultado"></p>
+
+			<div class="modal">
+
+				<div class="conteudo-modal">
+					<iframe id = "professora" width="640" height="427" src="./src/imagens/imagemprofessora.png"  style="z-index: 0;" title = "Imagem professora" frameborder = '1' allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
 					
+					<p id="menssage" style="z-index: 1;"> </p>
 					
+		
 					
-					
-                        
-                </li>
-                
-                <li id="historico_reuniao">
-                    <h2>Histórico</h2>
-					<!-- tem coisa sendo injetada aqui, via JS-->
-                </li>
+				</div>
 
-            </ul>
-        </main>
-
-
-
-		<footer>
-            <p 
-                class="rodape">&copy; Copyright Ronan Cassemiro - 2023
 				
 
-            </p>
-        </footer>
-	
-		<script src="./src/js/index.js"></script>
-		<script src="./src/js/service.js"></script>
+
+				
+			</div>
+
+		</main>
+		<script src="./src/js/main.js"></script>
+		<script src="./src/js/marioIndex.js"></script>
 	</body>
 </html>

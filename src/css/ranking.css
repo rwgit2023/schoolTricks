@@ -1,156 +1,262 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-  }
+body {
+  font-family: 'Poppins';
+  overflow: hidden;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.cabecalho .logo {
+  width: 150px;
   
-  html {
-    font-size: 50%;
-  }
+}
+
+.cabecalho .menu{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.cabecalho nav li a {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.cabecalho nav li a:hover {
+  background-color: #d5011d;
+}
+/* ------------------------------------------------------------------------------ */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+
+}
+/* ------------------------------------------------------------------------------ */
+.fundo-video {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.fundo-video .video {
+  height: 100vh;
+}
+
+.fundo-video::after {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+/* ------------------------------------------------------------------------------ */
+.tabela{
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  height: 900px;
+  padding: 30px;
+  box-sizing: border-box;
   
-  body {
-    font-family: 'Poppins';
-  }
+}
+
+.Conteudo_tabela{
+  margin: -10px 0 0 150px;
   
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px;
-    max-width: 1440px;
-    margin: 0 auto;
-    background: #D0D0CB;
+}
+
+.Conteudo_tabela thead{
+  background-color: rgb(51, 52, 54);
+  /* background-color: white; */
+  color: rgb(204, 248, 7);
+  font-size: 70px;
+  font-weight: bold;
+  /* padding: 20px; */
+}
+
+.Conteudo_tabela thead input{
+  padding: 5px;
+  text-align: center;
+}
+
+.Conteudo_tabela td,th{
+  border: solid 5px rgb(68, 94, 29);
+  padding: 10px 80px;
+}
+
+
+.tabela .calcular{
+  margin: -400px 700px;
+  width: 20%;
+  padding: 25px 0;
+  background-color: rgb(76, 165, 96);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.3s all;
+  cursor: pointer;
+  position: absolute;
+  /* display: none; */
   
-  }
-  
-  .header .logo {
-    width: 30%;
-    height: 80%;
-    object-fit: contain;
-    margin: 15px 0 0 0;
-  
-  
-  }
-  
-  .header .menu {
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .header nav li a {
-    font-weight: bold;
-    color: #343a40;
-    font-size: 20px;
-    padding: 5px 20px;
-    border-radius: 50px;
-    transition: 0.2s;
-    width: 0 10px;
-  }
-  
-  .header nav li a:hover {
-    background-color: #1C97C4;
-    color: #ffffff;
-  }
-  
-  .main {
-    flex-direction: row;
-  }
-  
-  .container {
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    color: black;
-    display: flex;
-  }
-  
-  /* ------------------------------------------------------------- */
-  
-  .histórico {
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  .histórico li {
-    display: inline-block;
-    text-align: center;
-    width: 40%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: 10px;
-  
-  }
-  
-  .histórico li:hover {
-    border-color: darkgoldenrod;
-  
-  
-  }
-  
-  .histórico li:active {
-  
-    border-color: aqua;
-  }
-  
-  .histórico li:hover h2 {
-    font-size: 40px;
-  }
-  
-  .histórico li p {
-    font-size: 20px;
-  }
-  
-  
-  li h2 {
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-    text-decoration: none;
-  }
-  
-  .descricao {
-    font-size: 18px;
-  
-  }
-  
-  .preco {
-    text-transform: uppercase;
-    color: black;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-    margin-top: 10px;
-  }
-  
-  .card{
-    margin: 2%;
-    border: solid 2px #D0D0CB;
-    
-  }
-  
-  .card span{
-    font-size: 12px;
-  }
+}
+
+.tabela .calcular:hover{
+  background-color: rgb(165, 49, 11);
+  transform: scale(1.2);
+
+}
+
+.ocultar{
+  visibility: hidden;
+  opacity: 0;
   
   
-  footer {
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: #343a40;
-    padding: 20px 0;
-  }
+}
   
-  .rodape {
-    color: #ffffff;
-    font-size: 10px;
-    margin-top: 20px;
+
+
+.mostrar{
+  visibility: visible;
+  opacity: 1;
+
+}
+
+.tabela .limpar{
+  margin: -80px 850px;
+  width: 20%;
+  padding: 25px 0;
+  background-color: rgb(170, 13, 13);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  transition: 1s all;
+  cursor: pointer;
+  position: absolute;
+  display: none;
   
-  }
+
+}
+
+.tabela .limpar:hover{
+  background-color: rgb(165, 49, 11);
+  transform: scale(1.2);
+
+}
+
+
+
+
+.green {
+  background-color: green;
+  
+}
+
+.red {
+  background-color: red;
+  
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------- */
+.modal {  
+
+   display: inline-block;
+   text-align: center;
+   width: 50%;
+   height: 900px;
+   vertical-align: top;
+   padding: 30px 20px;
+   box-sizing: border-box;
+   visibility: hidden;
+  
+}
+
+.tabela .conteudo-modal {
+  display: flex;
+  visibility:hidden;
+  pointer-events: none;
+  
+}
+
+
+
+.modal iframe {
+  border-width: 0;
+  margin: 40px 20px 0 0px;
+  pointer-events: none;
+  
+  
+}
+
+.modal.aberto {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.modal #menssage {
+
+  color: rgb(0, 0, 0);
+  text-shadow: #d5011d;
+  font-size: 40px;
+  max-width: 50%;
+  margin: -480px 0 10px 480px;
+  opacity: 2;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
