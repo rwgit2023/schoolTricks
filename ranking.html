@@ -13,18 +13,30 @@
 
 		<link rel="stylesheet" href="./src/css/reset.css">
 
-		<link rel="stylesheet" href="./src/css/home.css">
+		<link rel="stylesheet" href="./src/css/ranking.css">
 
 
-		<link rel="stylesheet" href="./src/css/homeResponsivo.css">
+		<link rel="stylesheet" href="./src/css/rankingResponsivo.css">
 
 		<title>School Tricks</title>
 	</head>
 	<body>
 
+		<div vw class="enabled">
+			<div vw-access-button class="active"></div>
+			<div vw-plugin-wrapper>
+			  <div class="vw-plugin-top-wrapper"></div>
+			</div>
+		  </div>
+		  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+		  <script>
+			new window.VLibras.Widget('https://vlibras.gov.br/app');
+		  </script>
+
 
 		<div class="fundo-video">
-			<img src="./src/imagens/home.jpeg" alt="home-fundo">
+			<img src="./src/imagens/ranking_1.png" alt="home-fundo">
+			<!-- <img src="./src/imagens/ranking.png" alt="home-fundo"> -->
 		</div>
 
 		<header class="cabecalho">
@@ -44,37 +56,24 @@
 
 		<main class="container">
 			
-			<form >
-                <label for="nome_sobrenome">Como você se chama?</label>
-                <input type="text" id="nome_sobrenome" class="input-padrao" required placeholder="Nome Completo">
+			
+            
+		<div id="ranking"></div>
 
-				<label for="idade">Quantos anos você tem?</label>
-                <input type="text" id="idade" class="input-padrao" required placeholder="Idade">
-				
-				<button class="enviar" type="submit">Enviar</button>
-			</form>
+			
 
-			<p id="resultado"></p>
+			
 
-			<div class="modal">
+			
+	
 
-				<div class="conteudo-modal">
-					<iframe id = "professora" width="640" height="427" src="./src/imagens/imagemprofessora.png"  style="z-index: 0;" title = "Imagem professora" frameborder = '1' allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-					
-					<p id="menssage" style="z-index: 1;"> </p>
-					
-		
-					
-				</div>
-
-				
-
-
-				
-			</div>
 
 		</main>
+		<script src="./src/js/ranking.js"></script>
 		<script src="./src/js/main.js"></script>
 		<script src="./src/js/marioIndex.js"></script>
+		<script src="./src/js/dinissauroIndex.js"></script>
+		<script src="./src/js/galaxiaIndex.js"></script>
+
 	</body>
 </html>

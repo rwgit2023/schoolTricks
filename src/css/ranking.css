@@ -67,196 +67,30 @@ body {
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
 }
 /* ------------------------------------------------------------------------------ */
-.tabela{
-  display: inline-block;
-  text-align: center;
-  width: 50%;
-  height: 900px;
-  padding: 30px;
-  box-sizing: border-box;
-  
+
+
+
+#ranking {
+  width: 2000px;
+  ;
 }
 
-.Conteudo_tabela{
-  margin: -10px 0 0 150px;
-  
-}
-
-.Conteudo_tabela thead{
-  background-color: rgb(51, 52, 54);
-  /* background-color: white; */
-  color: rgb(204, 248, 7);
-  font-size: 70px;
-  font-weight: bold;
-  /* padding: 20px; */
-}
-
-.Conteudo_tabela thead input{
-  padding: 5px;
-  text-align: center;
-}
-
-.Conteudo_tabela td,th{
-  border: solid 5px rgb(68, 94, 29);
-  padding: 10px 80px;
-}
-
-
-.tabela .calcular{
-  margin: -400px 700px;
-  width: 20%;
-  padding: 25px 0;
-  background-color: rgb(76, 165, 96);
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  border: none;
-  border-radius: 50px;
-  transition: 0.3s all;
-  cursor: pointer;
-  position: absolute;
-  /* display: none; */
-  
-}
-
-.tabela .calcular:hover{
-  background-color: rgb(165, 49, 11);
-  transform: scale(1.2);
-
-}
-
-.ocultar{
-  visibility: hidden;
-  opacity: 0;
-  
-  
-}
-  
-
-
-.mostrar{
-  visibility: visible;
-  opacity: 1;
-
-}
-
-.tabela .limpar{
-  margin: -80px 850px;
-  width: 20%;
-  padding: 25px 0;
-  background-color: rgb(170, 13, 13);
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  border: none;
-  border-radius: 50px;
-  transition: 1s all;
-  cursor: pointer;
-  position: absolute;
-  display: none;
-  
-
-}
-
-.tabela .limpar:hover{
-  background-color: rgb(165, 49, 11);
-  transform: scale(1.2);
-
-}
-
-
-
-
-.green {
-  background-color: green;
-  
-}
-
-.red {
-  background-color: red;
-  
-}
-
-
-
-
-/* -------------------------------------------------------------------------------------- */
-.modal {  
-
-   display: inline-block;
-   text-align: center;
-   width: 50%;
-   height: 900px;
-   vertical-align: top;
-   padding: 30px 20px;
-   box-sizing: border-box;
-   visibility: hidden;
-  
-}
-
-.tabela .conteudo-modal {
+.barra {
   display: flex;
-  visibility:hidden;
-  pointer-events: none;
-  
+  /* align-items: center; */
+  margin-bottom: 10px;
+}
+
+.barra .nome {
+  width: 100px;
+}
+
+.barra .porcentagem {
+  width: 100px;
+  background-color: #ddd;
+  height: 20px;
 }
 
 
-
-.modal iframe {
-  border-width: 0;
-  margin: 40px 20px 0 0px;
-  pointer-events: none;
-  
-  
-}
-
-.modal.aberto {
-  opacity: 1;
-  visibility: visible;
-}
-
-
-.modal #menssage {
-
-  color: rgb(0, 0, 0);
-  text-shadow: #d5011d;
-  font-size: 40px;
-  max-width: 50%;
-  margin: -480px 0 10px 480px;
-  opacity: 2;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ------------------------------------------------------------------------------ */
 
