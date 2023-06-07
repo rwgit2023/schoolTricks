@@ -71,18 +71,20 @@ body {
 
 
 #ranking {
-  width: 2000px;
+  width: 1000px;
   ;
 }
 
 .barra {
   display: flex;
   /* align-items: center; */
-  margin-bottom: 10px;
+  margin-bottom: center;
 }
 
 .barra .nome {
-  width: 100px;
+  width: 80px;
+  color: yellow;
+  padding: 10p 10pxx;
 }
 
 .barra .porcentagem {

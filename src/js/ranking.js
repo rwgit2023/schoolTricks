@@ -1,8 +1,9 @@
 // Dados de exemplo (nomes e porcentagens)
 var dados = [
     { nome: "Item 1", porcentagem: 50 },
-    { nome: "Item 2", porcentagem: 70 },
+    { nome: "Item 2", porcentagem: 50 },
     { nome: "Item 3", porcentagem: 50 },
+    { nome: "Item 4", porcentagem: 50 },
     // Adicione quantos itens desejar
   ];
   
