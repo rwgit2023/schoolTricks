@@ -71,26 +71,30 @@ body {
 
 
 #ranking {
-  width: 1000px;
-  ;
+  width: 1890px;
+
+  margin: 50px 50px;
+  
 }
 
 .barra {
   display: flex;
-  /* align-items: center; */
-  margin-bottom: center;
+  
+  margin-bottom: 5px;
 }
 
 .barra .nome {
   width: 80px;
   color: yellow;
-  padding: 10p 10pxx;
+  padding: 10p 1000px;
+  text-align: left;
 }
 
 .barra .porcentagem {
   width: 100px;
-  background-color: #ddd;
+  background-color:rgb(126, 35, 47);
   height: 20px;
+  text-align: left;
 }
 
 
