@@ -2,14 +2,15 @@
 var dados = [
     { nome: "Ronan", porcentagem: 30 },
     { nome: "Kely", porcentagem: 50 },
-    { nome: "Enzo", porcentagem: 70 },
-    { nome: "Jubileu", porcentagem: 90 },
+    { nome: "Enzo", porcentagem: 45 },
+    { nome: "Jubileu", porcentagem: 33 },
     { nome: "Persival", porcentagem: 45 },
-    { nome: "Jurivaldo", porcentagem: 72 },
+    { nome: "Jurivaldo", porcentagem: 67 },
     { nome: "Raimundo", porcentagem: 48 },
     { nome: "Isolina", porcentagem: 13 },
     // Adicione quantos itens desejar
   ];
+  
   
   // Função para gerar as barras de acordo com os dados
   function gerarBarras() {
