@@ -7,16 +7,7 @@ var dados = [
     { nome: "Persival", porcentagem: 45 },
     { nome: "Jurivaldo", porcentagem: 67 },
     { nome: "Raimundo", porcentagem: 48 },
-    { nome: "Isolina", porcentagem: 13 },
-    { nome: "Jurivaldo", porcentagem: 67 },
-    { nome: "Raimundo", porcentagem: 48 },
-    { nome: "Isolina", porcentagem: 13 },
-    { nome: "Jurivaldo", porcentagem: 67 },
-    { nome: "Raimundo", porcentagem: 48 },
-    { nome: "Isolina", porcentagem: 13 },
-    { nome: "Jurivaldo", porcentagem: 67 },
-    { nome: "Raimundo", porcentagem: 48 },
-    { nome: "Isolina", porcentagem: 13 },
+    { nome: "Isolina", porcentagem: 13 }
     // Adicione quantos itens desejar
   ];
   
