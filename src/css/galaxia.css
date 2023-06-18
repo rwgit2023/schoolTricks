@@ -183,51 +183,50 @@ body {
 /* -------------------------------------------------------------------------------------- */
 .modal {  
 
-     display: inline-block;
-     text-align: center;
-     width: 50%;
-     height: 900px;
-     vertical-align: top;
-     padding: 30px 20px;
-     box-sizing: border-box;
-     visibility: hidden;
-    
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    height: 900px;
+    vertical-align: top;
+    padding: 30px 0px;
+    box-sizing: border-box;
+    visibility: hidden;
+   
 }
 
 .tabela .conteudo-modal {
-    display: flex;
-    visibility:hidden;
-    pointer-events: none;
-    
+   display: flex;
+   visibility:hidden;
+   pointer-events: none;
+   
 }
 
 
 
 .modal iframe {
-    border-width: 0;
-    margin: 40px 20px 0 0px;
-    pointer-events: none;
-    
-    
+   border-width: 0;
+   margin: 40px 0px 0 0px;
+   pointer-events: none;
+   
+   
 }
 
 .modal.aberto {
-    opacity: 1;
-    visibility: visible;
+   opacity: 1;
+   visibility: visible;
 }
 
 
 .modal #menssage {
 
-    color: rgb(0, 0, 0);
-    text-shadow: #d5011d;
-    font-size: 40px;
-    max-width: 50%;
-    margin: -480px 0 10px 480px;
-    opacity: 2;
+   color: rgb(0, 0, 0);
+   text-shadow: #d5011d;
+   font-size: 40px;
+   max-width: 50%;
+   margin: -480px 0 10px 460px;
+   opacity: 2;
 
 }
-
 
 
 
