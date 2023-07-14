@@ -27,6 +27,7 @@ botaoEnviar.addEventListener('click', function(event) {
     // Seleciona o valor do campo de entrada de texto
     const valoIidadeDigitado = document.getElementById('idade');
     // Seleciona o elemento de exibição de resultado
+    setLocalStorageValue(CURRENTUSER,  valorNomeDigitado.toString())
     const resultado = document.getElementById('menssage');
 
     
