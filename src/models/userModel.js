@@ -1,0 +1,4 @@
+var user = {
+    nome : '',pontos : []
+}
+

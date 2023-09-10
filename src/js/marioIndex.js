@@ -77,7 +77,7 @@ botaoEnviar.addEventListener('click', function (event) {
   console.log('Respostas Corretas:', lista1)
 
   let lista2 = []
-   lista2.push(resultado1.value, resultado2.value, resultado3.value, resultado4.value, resultado5.value) 
+  lista2.push(resultado1.value, resultado2.value, resultado3.value, resultado4.value, resultado5.value)
   console.log('Respostas:', lista2)
 
   let listap = []
@@ -123,9 +123,36 @@ botaoEnviar.addEventListener('click', function (event) {
     respostaC.textContent = ('Você esta quase lá.   Tente mais uma vez.')
   }
 
-  console.log('Você obteve: ', pontuacao);
-  console.log('Você acertou as questões: ', lista_acertos)
-  console.log('Você errou as questões: ', lista_erros)
+
+  let user = {
+    nome: "",
+    pontos: []
+  }
+
+  // console.log(user)
+
+  user.nome = getLocalStorageValue(CURRENTUSER)
+  user.pontos.push(pontuacao)
+
+  console.log(user)
+
+  let userList = getLocalStorageValue(USER_LIST);
+  
+  if (userList == null) {
+    setLocalStorageValue(USER_LIST, JSON.stringify([user]))
+  }
+  else{
+    userList[getLocalStorageValue(CURRENTUSER)].pontos.push(pontuacao)
+    setLocalStorageValue(USER_LIST, userList)
+  }
+
+  console.warn(getLocalStorageValue(USER_LIST))
+
+  /*
+    console.log('Você obteve: ', pontuacao);
+    console.log('Você acertou as questões: ', lista_acertos)
+    console.log('Você errou as questões: ', lista_erros)
+  */
 
 })
 
@@ -142,25 +169,19 @@ botaoLimpar.addEventListener('click', function (event) {
   resp4.value = ' ';
   resp5.value = ' ';
 
-  resultado1.classList.remove('green','red')
-  resultado2.classList.remove('green','red')
-  resultado3.classList.remove('green','red')
-  resultado4.classList.remove('green','red')
-  resultado5.classList.remove('green','red')
+  resultado1.classList.remove('green', 'red')
+  resultado2.classList.remove('green', 'red')
+  resultado3.classList.remove('green', 'red')
+  resultado4.classList.remove('green', 'red')
+  resultado5.classList.remove('green', 'red')
 
 
   botaoEnviar.classList.add('aberto')
   botaoLimpar.classList.add('ocultar')
-  
+
 
 
   window.location.href = './dinossauro.html'; // muda de página
-  
-
-
-
-
-
 })
 
 
