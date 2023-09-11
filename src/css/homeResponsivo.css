@@ -1,12 +1,5 @@
 @media (max-width: 1200px) {
-    body {
-       background-color: #f44336;
-    }
-
-    .fundo-video {
-        display: none;
-    }
-
+   
     .container {
         flex-wrap: wrap;
         justify-content: center;

@@ -124,6 +124,7 @@ botaoEnviar.addEventListener('click', function (event) {
   }
 
 
+
   let user = {
     nome: "",
     pontos: []
@@ -137,13 +138,26 @@ botaoEnviar.addEventListener('click', function (event) {
   console.log(user)
 
   let userList = getLocalStorageValue(USER_LIST);
-  
+
   if (userList == null) {
     setLocalStorageValue(USER_LIST, JSON.stringify([user]))
   }
-  else{
-    userList[getLocalStorageValue(CURRENTUSER)].pontos.push(pontuacao)
-    setLocalStorageValue(USER_LIST, userList)
+  else {
+    let json = JSON.parse(userList);
+    let userFromStorage = json.find((element) => element.nome == getLocalStorageValue(CURRENTUSER));
+
+    // lista[0] -> é um objeto jogador
+    // lista[ na pos. do index do cara na própria lista ]  
+    if (userFromStorage == undefined) {
+      json.push(user);
+    }
+    else {
+      let pos = json[json.indexOf(userFromStorage)];
+      console.log(pos)
+      userFromStorage.pontos.push(pontuacao);
+    }
+
+    setLocalStorageValue(USER_LIST, JSON.stringify(json));
   }
 
   console.warn(getLocalStorageValue(USER_LIST))
