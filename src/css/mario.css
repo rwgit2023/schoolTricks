@@ -38,11 +38,11 @@ body {
 
 /* ------------------------------------------------------------------------------ */
 .container {
-    border: 1px solid yellow;
+    border: px solid yellow;
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    margin: 3%;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -72,32 +72,33 @@ body {
 
 /* ------------------------------------------------------------------------------ */
 .tabela {
-    border: 2px solid pink;
+    border: px solid pink;
+    background-color: rgb(51, 52, 54);
     text-align: center;
-    width: 100%;
+    width: 50%;
     height: 30%;
 
 }
-tr{
-    width: 50%;
+table{
+    border: 1px solid yellow;
 }
-
-.tabela{
-
-}
-
-.Conteudo_tabela {
-    background-color: rgb(51, 52, 54);
+td{
     /* background-color: white; */
     color: rgb(204, 248, 7);
     font-weight: bold;
+    padding: 3%;
+    border: 2px solid yellow;
+    width: 100%;
+}
+td input{
+    margin: 2%;
 }
 
 
 
 .calcular {
-    width: 20%;
-    padding: 25px 0;
+    width: 30%;
+    padding: 2% 0;
     background-color: rgb(76, 165, 96);
     color: white;
     font-weight: bold;
@@ -115,32 +116,42 @@ tr{
 }
 
 .ocultar {
-    visibility: hidden;
+    display: none;
     opacity: 0;
 }
 
 .mostrar {
-    visibility: visible;
+    display: block;
     opacity: 1;
 
 }
 
+.aberto{
+    display: block;
+    width: 80%;
+    border: px solid red;
+    position: relative;
+}
+.aberto img {
+    width: 100%;
+    position: relative;
+}
+
+
 .limpar {
-    margin: -80px 850px;
-    width: 20%;
-    padding: 25px 0;
+    width: 30%;
+    padding: 2% 0;
     background-color: rgb(170, 13, 13);
     color: white;
     font-weight: bold;
     font-size: 18px;
     border: none;
     border-radius: 50px;
-    transition: 1s all;
+    transition: 0.3s all;
     cursor: pointer;
-    position: absolute;
+    width: 20%;
+    padding: 1% 0;
     display: none;
-
-
 }
 
 .limpar:hover {
@@ -160,17 +171,90 @@ tr{
 
 }
 
-
-
-
 /* -------------------------------------------------------------------------------------- */
 .modal {
-    width: 40%;
-    border: 1px solid red;
+    width: 80%;
+    border: px solid red;
     position: relative;
+    display: none;
 }
 
 .modal img {
-    width: 50%;
+    width: 100%;
     position: relative;
+}
+
+#menssage{
+    position: absolute;
+    right: 8%;
+    top: 5%;
+    width: 45%;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: px solid pink;
+}
+
+
+@media (max-width: 1200px) {
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+    }
+
+    .container .mario {
+        max-width: 50%;
+    }
+
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .descricao {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .container .botao-contas {
+        background-color: #263238;
+    }
+}
+
+@media (max-width: 500px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .container .imagem-titulo {
+        max-width: 75%;
+    }
+
+    .modal .fechar-modal {
+        width: 30px;
+        line-height: 30px;
+    }
+
+    .modal #video {
+        width: 300px;
+        height: 169px;
+    }
+}
+
+@media (max-width: 376px) {
+    .modal #video {
+        width: 250px;
+        height: 140px;
+    }
 }

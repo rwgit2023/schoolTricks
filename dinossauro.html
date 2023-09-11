@@ -1,111 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="shortcut icon" href="./src/imagens/logo_preto.ico" type="image/x-icon">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
+	<link rel="shortcut icon" href="./src/imagens/logo_preto.ico" type="image/x-icon">
 
-		<link rel="stylesheet" href="./src/css/reset.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
 
-		<link rel="stylesheet" href="./src/css/dinossauro.css">
+	<link rel="stylesheet" href="./src/css/reset.css">
 
-
-		<link rel="stylesheet" href="./src/css/galaxiaResponsivo.css">
-
-		<title>School Tricks</title>
-	</head>
-	<body>
+	<link rel="stylesheet" href="./src/css/dinossauro.css">
 
 
-		<div vw class="enabled">
-			<div vw-access-button class="active"></div>
-			<div vw-plugin-wrapper>
-			  <div class="vw-plugin-top-wrapper"></div>
-			</div>
-		  </div>
-		  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-		  <script>
-			new window.VLibras.Widget('https://vlibras.gov.br/app');
-		  </script>
+	<link rel="stylesheet" href="./src/css/galaxiaResponsivo.css">
+
+	<title>School Tricks</title>
+</head>
+
+<body>
 
 
-		<div class="fundo-video">
-			<video class="video" autoplay loop muted>
-				<source src="./src/video/Trailer - O Bom Dinossauro.mp4" type="video/mp4" />
-			</video>
+	<div vw class="enabled">
+		<div vw-access-button class="active"></div>
+		<div vw-plugin-wrapper>
+			<div class="vw-plugin-top-wrapper"></div>
+		</div>
+	</div>
+	<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+	<script>
+		new window.VLibras.Widget('https://vlibras.gov.br/app');
+	</script>
+
+
+	<div class="fundo-video">
+		<video class="video" autoplay loop muted>
+			<source src="./src/video/Trailer - O Bom Dinossauro.mp4" type="video/mp4" />
+		</video>
+	</div>
+
+	<header class="cabecalho">
+		<a href="home.html">
+
+			<img class="logo" src="./src/imagens/logo_preto.png" alt="logo-projeto" />
+		</a>
+		<nav>
+			<ul class="menu">
+				<li><a href="./home.html"> Home </a></li>
+				<li><a href="ranking.html"> Area - Pedagógica </a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+
+		<div class="tabela">
+			<table>
+				<tr>
+					<td>
+						<p id="num1" style="z-index: 1;" src="./src/imagens/teste_cogumelo.png"> </p>
+					</td>
+					<td><input id='resp1' type="number" required placeholder="  Resposta"></td>
+				</tr>
+				<tr>
+					<td>
+						<p id="num2" style="z-index: 1;"> </p>
+					</td>
+					<td><input id='resp2' type="number" required placeholder="  Resposta"></td>
+				</tr>
+				<tr>
+					<td>
+						<p id="num3" style="z-index: 1;"> </p>
+					</td>
+					<td><input id='resp3' type="number" required placeholder="  Resposta"></td>
+				</tr>
+				<tr>
+					<td>
+						<p id="num4" style="z-index: 1;"> </p>
+					</td>
+					<td><input id='resp4' type="number" required placeholder="  Resposta"></td>
+				</tr>
+				<tr>
+					<td>
+						<p id="num5" style="z-index: 1;"> </p>
+					</td>
+					<td><input id='resp5' type="number" required placeholder="  Resposta"></td>
+				</tr>
+			</table>
 		</div>
 
-		<header class="cabecalho">
-			<a href="home.html">
-                
-				<img class="logo" src="./src/imagens/logo_preto.png" alt="logo-projeto" />
-			</a>
-			<nav>
-				<ul class="menu">
-					<li><a href="./home.html">   Home   </a></li>
-					<li><a href="ranking.html"> Area - Pedagógica </a></li>
-				</ul>
-			</nav>
-		</header>
-		<main class="container">
 
-			<div class="tabela">
-				<div class="Conteudo_tabela">
 
-					<table>
-						<thead>
-							<tr>
-								<td><p id="num1" style="z-index: 1;"> </p></td>
-								<td><input id = 'resp1' type="number" required placeholder="  Resposta"></td>
-							</tr>
-							<tr>
-								<td><p id="num2" style="z-index: 1;"> </p></td>
-								<td><input id = 'resp2' type="number" required placeholder="  Resposta"></td>
-							</tr>
-							<tr>
-								<td><p id="num3" style="z-index: 1;"> </p></td>
-								<td><input id = 'resp3' type="number" required placeholder="  Resposta"></td>
-							</tr>
-							<tr>
-								<td><p id="num4" style="z-index: 1;"> </p></td>
-								<td><input id = 'resp4' type="number" required placeholder="  Resposta"></td>
-							</tr>
-							<tr>
-								<td><p id="num5" style="z-index: 1;"> </p></td>
-								<td><input id = 'resp5' type="number" required placeholder="  Resposta"></td>
-							</tr>
-						</thead>
-					</table>
-				</div>
-
-				<button class="calcular" type="submit">Calcular</button>
-				<button class="limpar" type="submit">Próximo</button>
-																															
-			</div>
-
+		<div class="right">
 
 			<div class="modal">
 				<div class="conteudo-modal">
-					<iframe   width="1000" height="550" id = "mario" src="./src/imagens/dinossauro.png"  style="z-index: 0;" title = "Imagem Mario" frameborder = '1' 
-					allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  ></iframe>
-				
 					<p id="menssage" style="z-index: 1;"> </p>
-					
-					
+					<img id="mario" src="./src/imagens/Dinossauro.png" style="z-index: 0;" title="Imagem Mario" />
 				</div>
-				
-				
 			</div>
-		</main>
-		<script src="./src/js/dinissauroIndex.js"></script>
-		<script src="./src/js/ranking.js"></script>
-		<script src="./src/service/service.js"></script>
-		<script src="./src/constants/constants.js"></script>
-	</body>
+			<button class="calcular" type="submit">Calcular</button>
+			<button class="limpar" type="submit">Próximo</button>
+
+		</div>
+
+	</main>
+	<script src="./src/js/dinissauroIndex.js"></script>
+	<script src="./src/js/ranking.js"></script>
+	<script src="./src/service/service.js"></script>
+	<script src="./src/constants/constants.js"></script>
+</body>
+
 </html>

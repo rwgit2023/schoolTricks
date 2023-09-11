@@ -59,7 +59,7 @@ const respostaC = document.getElementById('menssage');
 botaoEnviar.addEventListener('click', function (event) {
   console.log("Cliquei no enviar")
   event.preventDefault();
-  modal.classList.add("aberto");
+  modal.className = "aberto";
   const resultado = document.getElementById('menssage');
   botaoEnviar.classList.add('ocultar')
   botaoLimpar.style.display = "inline-block";

@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins';
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .cabecalho {
@@ -13,10 +14,10 @@ body {
 
 .cabecalho .logo {
     width: 150px;
-    
+
 }
 
-.cabecalho .menu{
+.cabecalho .menu {
     display: flex;
     align-items: center;
     height: 100%;
@@ -34,14 +35,16 @@ body {
 .cabecalho nav li a:hover {
     background-color: #d5011d;
 }
+
 /* ------------------------------------------------------------------------------ */
 .container {
+    border: px solid yellow;
     display: flex;
     flex-direction: row;
     align-items: center;
-    display: flex;
-
+    margin: 3%;
 }
+
 /* ------------------------------------------------------------------------------ */
 .fundo-video {
     position: absolute;
@@ -64,48 +67,38 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
 }
+
 /* ------------------------------------------------------------------------------ */
-.tabela{
-    display: inline-block;
+.tabela {
+    border: px solid pink;
+    background-color: rgb(51, 52, 54);
     text-align: center;
     width: 50%;
-    height: 900px;
-    padding: 30px;
-    box-sizing: border-box;
-    
-}
+    height: 30%;
 
-.Conteudo_tabela{
-    margin: -10px 0 0 150px;
-    
 }
-
-.Conteudo_tabela thead{
-    background-color: rgb(51, 52, 54);
+table{
+    border: 1px solid yellow;
+}
+td{
     /* background-color: white; */
     color: rgb(204, 248, 7);
-    font-size: 70px;
     font-weight: bold;
-    /* padding: 20px; */
+    padding: 3%;
+    border: 2px solid yellow;
+    width: 100%;
 }
-
-.Conteudo_tabela thead input{
-    padding: 5px;
-    text-align: center;
-}
-
-.Conteudo_tabela td,th{
-    border: solid 5px rgb(68, 94, 29);
-    padding: 10px 80px;
+td input{
+    margin: 2%;
 }
 
 
-.tabela .calcular{
-    margin: -400px 700px;
-    width: 20%;
-    padding: 25px 0;
+
+.calcular {
+    width: 30%;
+    padding: 2% 0;
     background-color: rgb(76, 165, 96);
     color: white;
     font-weight: bold;
@@ -114,133 +107,154 @@ body {
     border-radius: 50px;
     transition: 0.3s all;
     cursor: pointer;
-    position: absolute;
     /* display: none; */
-    
 }
 
-.tabela .calcular:hover{
+.calcular:hover {
     background-color: rgb(165, 49, 11);
     transform: scale(1.2);
-
 }
 
-.ocultar{
-    visibility: hidden;
+.ocultar {
+    display: none;
     opacity: 0;
-    
-    
 }
-    
 
-
-.mostrar{
-    visibility: visible;
+.mostrar {
+    display: block;
     opacity: 1;
 
 }
 
-.tabela .limpar{
-    margin: -80px 850px;
-    width: 20%;
-    padding: 25px 0;
+.aberto{
+    display: block;
+    width: 80%;
+    border: px solid red;
+    position: relative;
+}
+.aberto img {
+    width: 100%;
+    position: relative;
+}
+
+
+.limpar {
+    width: 30%;
+    padding: 2% 0;
     background-color: rgb(170, 13, 13);
     color: white;
     font-weight: bold;
     font-size: 18px;
     border: none;
     border-radius: 50px;
-    transition: 1s all;
+    transition: 0.3s all;
     cursor: pointer;
-    position: absolute;
+    width: 20%;
+    padding: 1% 0;
     display: none;
-    
-
 }
 
-.tabela .limpar:hover{
+.limpar:hover {
     background-color: rgb(165, 49, 11);
     transform: scale(1.2);
 
 }
 
 
-
-
 .green {
     background-color: green;
-    
-  }
-  
-  .red {
-    background-color: red;
-    
-  }
 
- 
-  
+}
+
+.red {
+    background-color: red;
+
+}
 
 /* -------------------------------------------------------------------------------------- */
-.modal {  
+.modal {
+    width: 80%;
+    border: px solid red;
+    position: relative;
+    display: none;
+}
 
-    display: inline-block;
-    text-align: center;
+.modal img {
+    width: 100%;
+    position: relative;
+}
+
+#menssage{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 45%;
+}
+
+.right{
     width: 50%;
-    height: 900px;
-    vertical-align: top;
-    padding: 30px 0px;
-    box-sizing: border-box;
-    visibility: hidden;
-   
-}
-
-.tabela .conteudo-modal {
-   display: flex;
-   visibility:hidden;
-   pointer-events: none;
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: px solid pink;
 }
 
 
+@media (max-width: 1200px) {
 
-.modal iframe {
-   border-width: 0;
-   margin: 40px 0px 0 0px;
-   pointer-events: none;
-   
-   
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+    }
+
+    .container .mario {
+        max-width: 50%;
+    }
+
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .descricao {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .container .botao-contas {
+        background-color: #263238;
+    }
 }
 
-.modal.aberto {
-   opacity: 1;
-   visibility: visible;
+@media (max-width: 500px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .container .imagem-titulo {
+        max-width: 75%;
+    }
+
+    .modal .fechar-modal {
+        width: 30px;
+        line-height: 30px;
+    }
+
+    .modal #video {
+        width: 300px;
+        height: 169px;
+    }
 }
 
-
-.modal #menssage {
-
-   color: rgb(0, 0, 0);
-   text-shadow: #d5011d;
-   font-size: 40px;
-   max-width: 50%;
-   margin: -480px 0 10px 460px;
-   opacity: 2;
-
+@media (max-width: 376px) {
+    .modal #video {
+        width: 250px;
+        height: 140px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

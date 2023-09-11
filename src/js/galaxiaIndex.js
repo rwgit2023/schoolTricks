@@ -11,31 +11,33 @@ const spot9 = document.getElementById('num9');
 const spot10 = document.getElementById('num10');
 
 
+// Exibe o valor digitado na tela
+
 num1 = (Math.floor(Math.random() * 10) + 1)
 num2 = (Math.floor(Math.random() * 10) + 1)
-spot1.textContent = (num1 + '      x      ' + num2)
-var correto1 = num1 * num2
+spot1.textContent = (num1 + '      +      ' + num2)
+var correto1 = num1 + num2
 
 
 num3 = (Math.floor(Math.random() * 10) + 1)
 num4 = (Math.floor(Math.random() * 10) + 1)
-spot2.textContent = (num3 + '      x      ' + num4)
-var correto2 = num3 * num4
+spot2.textContent = (num3 + '      +      ' + num4)
+var correto2 = num3 + num4
 
 num5 = (Math.floor(Math.random() * 10) + 1)
 num6 = (Math.floor(Math.random() * 10) + 1)
-spot3.textContent = (num5 + '      x      ' + num6)
-var correto3 = num5 * num6
+spot3.textContent = (num5 + '      +      ' + num6)
+var correto3 = num5 + num6
 
 num7 = (Math.floor(Math.random() * 10) + 1)
 num8 = (Math.floor(Math.random() * 10) + 1)
-spot4.textContent = (num7 + '      x      ' + num8)
-var correto4 = num7 * num8
+spot4.textContent = (num7 + '      +      ' + num8)
+var correto4 = num7 + num8
 
 num9 = (Math.floor(Math.random() * 10) + 1)
 num10 = (Math.floor(Math.random() * 10) + 1)
-spot5.textContent = (num9 + '      x      ' + num10)
-var correto5 = num9 * num10
+spot5.textContent = (num9 + '      +      ' + num10)
+var correto5 = num9 + num10
 
 i = 0
 
@@ -57,10 +59,11 @@ const respostaC = document.getElementById('menssage');
 botaoEnviar.addEventListener('click', function (event) {
   console.log("Cliquei no enviar")
   event.preventDefault();
-  modal.classList.add("aberto");
+  modal.className = "aberto";
   const resultado = document.getElementById('menssage');
   botaoEnviar.classList.add('ocultar')
   botaoLimpar.style.display = "inline-block";
+
 
   resultado1 = document.querySelector('#resp1');
   resultado2 = document.querySelector('#resp2');
@@ -71,16 +74,15 @@ botaoEnviar.addEventListener('click', function (event) {
 
   let lista1 = []
   lista1.push(correto1, correto2, correto3, correto4, correto5)
-
   console.log('Respostas Corretas:', lista1)
 
   let lista2 = []
-   lista2.push(resultado1.value, resultado2.value, resultado3.value, resultado4.value, resultado5.value) 
+  lista2.push(resultado1.value, resultado2.value, resultado3.value, resultado4.value, resultado5.value)
   console.log('Respostas:', lista2)
 
   let listap = []
   listap.push(resultado1, resultado2, resultado3, resultado4, resultado5)
-
+  // , resultado6, resultado7, resultado8, resultado9, resultado10)
   console.log('LISTA DOIDA', listap)
 
 
@@ -121,21 +123,45 @@ botaoEnviar.addEventListener('click', function (event) {
     respostaC.textContent = ('Você esta quase lá.   Tente mais uma vez.')
   }
 
-  console.log('Você obteve: ', pontuacao);
-  console.log('Você acertou as questões: ', lista_acertos)
-  console.log('Você errou as questões: ', lista_erros)
+
+  let user = {
+    nome: "",
+    pontos: []
+  }
+
+  // console.log(user)
+
+  user.nome = getLocalStorageValue(CURRENTUSER)
+  user.pontos.push(pontuacao)
+
+  console.log(user)
+
+  let userList = getLocalStorageValue(USER_LIST);
+  
+  if (userList == null) {
+    setLocalStorageValue(USER_LIST, JSON.stringify([user]))
+  }
+  else{
+    userList[getLocalStorageValue(CURRENTUSER)].pontos.push(pontuacao)
+    setLocalStorageValue(USER_LIST, userList)
+  }
+
+  console.warn(getLocalStorageValue(USER_LIST))
+
+  /*
+    console.log('Você obteve: ', pontuacao);
+    console.log('Você acertou as questões: ', lista_acertos)
+    console.log('Você errou as questões: ', lista_erros)
+  */
 
 })
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
 botaoLimpar.addEventListener('click', function (event) {
   console.log("Cliquei no limpar")
   event.preventDefault();
-  // modal.classList.add("ocultar");
-
 
   resp1.value = ' ';
   resp2.value = ' ';
@@ -143,27 +169,17 @@ botaoLimpar.addEventListener('click', function (event) {
   resp4.value = ' ';
   resp5.value = ' ';
 
-  resultado1.classList.remove('green','red')
-  resultado2.classList.remove('green','red')
-  resultado3.classList.remove('green','red')
-  resultado4.classList.remove('green','red')
-  resultado5.classList.remove('green','red')
+  resultado1.classList.remove('green', 'red')
+  resultado2.classList.remove('green', 'red')
+  resultado3.classList.remove('green', 'red')
+  resultado4.classList.remove('green', 'red')
+  resultado5.classList.remove('green', 'red')
+
 
   botaoEnviar.classList.add('aberto')
   botaoLimpar.classList.add('ocultar')
-  
+
+
+
   window.location.href = './ranking.html'; // muda de página
-
-
-  
-
-
-
-
-
 })
-
-
-
-
-
