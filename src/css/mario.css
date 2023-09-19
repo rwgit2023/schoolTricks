@@ -72,7 +72,7 @@ body {
 
 /* ------------------------------------------------------------------------------ */
 .tabela {
-    border: px solid pink;
+    border: 10px solid red;
     background-color: rgb(51, 52, 54);
     text-align: center;
     width: 50%;
@@ -91,14 +91,25 @@ td{
     width: 100%;
 }
 td input{
-    margin: 2%;
-}
 
+    width: 180px;
+    min-height: 30px;
+    padding-right: 30px;
+    
+    
+    
+    
+    
+}
+#resp1,#resp2,#resp3,#resp4,#resp5{
+    width: 100px;
+    height: 30px;
+}
 
 
 .calcular {
     width: 30%;
-    padding: 2% 0;
+    padding: 5% 0;
     background-color: rgb(76, 165, 96);
     color: white;
     font-weight: bold;
@@ -200,6 +211,8 @@ td input{
     border: px solid pink;
 }
 
+
+/* -------------------------------------------------------------------------------------- */
 
 @media (max-width: 1200px) {
 
