@@ -72,39 +72,55 @@ body {
 
 /* ------------------------------------------------------------------------------ */
 .tabela {
-    border: 10px solid red;
+    
     background-color: rgb(51, 52, 54);
     text-align: center;
-    width: 50%;
-    height: 30%;
+    width: 60%;
+/*      */
+    /* height: 50%; */
 
 }
 table{
-    border: 1px solid yellow;
+    border: 1px solid rgb(204, 248, 7);
+    width: 100%;
+    
 }
 td{
     /* background-color: white; */
     color: rgb(204, 248, 7);
     font-weight: bold;
     padding: 3%;
-    border: 2px solid yellow;
-    width: 100%;
+   
+   
 }
 td input{
 
-    width: 180px;
+    width: 70%;
+    height: 50px;
     min-height: 30px;
-    padding-right: 30px;
-    
-    
-    
-    
-    
+    padding-right: 30px; 
+    text-align: center;
+    font-size: 17px;
 }
-#resp1,#resp2,#resp3,#resp4,#resp5{
-    width: 100px;
-    height: 30px;
+
+.escrita{
+    width: 70%;
+    height: 50px;
+    border: 2px solid yellow;
+    font-size: 30px;
 }
+
+
+.rasp{
+    width: 30%;
+    height: 50px;
+    border: 2px solid rgb(204, 248, 7);
+    align-items: center;
+}
+
+
+
+
 
 
 .calcular {
