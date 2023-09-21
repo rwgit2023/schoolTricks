@@ -1,5 +1,8 @@
 body {
     font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -13,10 +16,10 @@ body {
 
 .cabecalho .logo {
     width: 150px;
-    
+
 }
 
-.cabecalho .menu{
+.cabecalho .menu {
     display: flex;
     align-items: center;
     height: 100%;
@@ -57,31 +60,35 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
 
-form{
+form {
     margin: 150px 0;
-    
-    
+
+
 }
-form label, form p, fieldset{
+
+form label,
+form p,
+fieldset {
     display: block;
     color: white;
     font-size: 50px;
     margin: 0 0 0 50px;
-    
+
 }
-.input-padrao{
+
+.input-padrao {
     display: block;
-    margin: 0 30px 20px 50px;   
-    padding: 15px 25px; 
+    margin: 0 30px 20px 50px;
+    padding: 15px 25px;
     width: 50%;
     border-radius: 50px;
 }
 
-.container .enviar{
+.container .enviar {
     margin: 40px 0 0 250px;
     width: 20%;
     padding: 15px 0;
@@ -93,10 +100,10 @@ form label, form p, fieldset{
     border-radius: 50px;
     transition: 1s all;
     cursor: pointer;
-    
+
 }
 
-.container .enviar:hover{
+.container .enviar:hover {
     background-color: rgb(165, 49, 11);
     transform: scale(1.2);
 
@@ -147,7 +154,7 @@ form label, form p, fieldset{
 
 .modal #menssage {
 
-    color:white;
+    color: white;
     font-size: 22px;
     max-width: 50%;
     margin: -270px 0 10px 110px;
