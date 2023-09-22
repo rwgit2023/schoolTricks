@@ -75,17 +75,21 @@ body {
 }
 
 /* ------------------------------------------------------------------------------ */
+
 .tabela {
-    border: px solid pink;
+
     background-color: rgb(51, 52, 54);
     text-align: center;
-    width: 50%;
-    height: 30%;
+    width: 60%;
+    /*      */
+    /* height: 50%; */
 
 }
 
 table {
-    border: 1px solid yellow;
+    border: 1px solid rgb(204, 248, 7);
+    width: 100%;
+
 }
 
 td {
@@ -93,13 +97,55 @@ td {
     color: rgb(204, 248, 7);
     font-weight: bold;
     padding: 3%;
-    border: 2px solid yellow;
-    width: 100%;
+
+
 }
 
 td input {
-    margin: 2%;
+
+    width: 70%;
+    height: 50px;
+    min-height: 30px;
+    padding-right: 30px;
+    text-align: center;
+    font-size: 17px;
 }
+
+.escrita {
+    width: 70%;
+    height: 50px;
+    border: 2px solid yellow;
+    font-size: 30px;
+}
+
+
+.rasp {
+    width: 30%;
+    height: 50px;
+    border: 2px solid rgb(204, 248, 7);
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -17,6 +17,8 @@ body {
 
 .cabecalho .logo {
     width: 150px;
+    background-color: white;
+    margin-top: 5%;
 
 }
 
@@ -128,7 +130,7 @@ td input{
 
 .calcular {
     width: 30%;
-    padding: 5% 0;
+    padding: 2% 0;
     background-color: rgb(76, 165, 96);
     color: white;
     font-weight: bold;
