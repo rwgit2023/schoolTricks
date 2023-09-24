@@ -1,41 +1,119 @@
 // Dados de exemplo (nomes e porcentagens)
-var dados = [
-    { nome: "Ronan", porcentagem: 30 },
-    { nome: "Kely", porcentagem: 50 },
-    { nome: "Enzo", porcentagem: 45 },
-    { nome: "Jubileu", porcentagem: 33 },
-    { nome: "Persival", porcentagem: 45 },
-    { nome: "Jurivaldo", porcentagem: 67 },
-    { nome: "Raimundo", porcentagem: 48 },
-    { nome: "Isolina", porcentagem: 13 }
-    // Adicione quantos itens desejar
-  ];
-  
-  
-  // Função para gerar as barras de acordo com os dados
-  function gerarBarras() {
-    var ranking = document.getElementById("ranking");
-  
-    for (var i = 0; i < dados.length; i++) {
-      var item = dados[i];
-  
-      var barra = document.createElement("div");
-      barra.className = "barra";
-  
-      var nome = document.createElement("div");
-      nome.className = "nome";
-      nome.textContent = item.nome;
-  
-      var porcentagem = document.createElement("div");
-      porcentagem.className = "porcentagem";
-      porcentagem.style.width = item.porcentagem + "%";
-  
-      barra.appendChild(nome);
-      barra.appendChild(porcentagem);
-  
-      ranking.appendChild(barra);
-    }
+let map = {
+  excelente: 0,
+  mb: 0,
+  bom: 0,
+  mediano: 0,
+  melhorar: 0
+}
+
+// Função para gerar as barras de acordo com os dados
+function gerarBarras() {
+  var ranking = document.getElementById("ranking");
+
+  for (var i = 0; i < dados.length; i++) {
+    var item = dados[i];
+
+    var barra = document.createElement("div");
+    barra.className = "barra";
+
+    var nome = document.createElement("div");
+    nome.className = "nome";
+    nome.textContent = item.nome;
+
+    var porcentagem = document.createElement("div");
+    porcentagem.className = "porcentagem";
+    porcentagem.style.width = item.porcentagem + "%";
+
+    barra.appendChild(nome);
+    barra.appendChild(porcentagem);
+
+    ranking.appendChild(barra);
   }
-  
-  // Chamada da função para gerar as barras
-  gerarBarras();
+}
+
+// Chamada da função para gerar as barras
+gerarBarras();
+
+function createChart() {
+
+  let user = {
+    nome: "",
+    pontos: []
+  }
+
+  let array = [];
+
+  // console.log(user)
+
+  array = JSON.parse(getLocalStorageValue(USER_LIST));
+  console.log(array)
+
+  if (array != null) {
+    array.forEach(element => {
+      let sum = 0;
+      element.pontos.forEach(ponto => {
+        sum += ponto;
+      });
+      checkPosition(sum);
+    });
+  }
+
+  CanvasJS.addColorSet("greenShades",
+    [//colorSet Array
+      "#FF0000",
+      "#fcba03",
+      "#f4fc03",
+      "#097a0a",
+      "#03fc07"
+    ]);
+
+  var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    colorSet: "greenShades",
+    title: {
+      text: array == null ? "Ninguém jogou" : "Resultados: ",
+      horizontalAlign: array == null ? "center" : "left",
+      fontColor: "#fff"
+    },
+    backgroundColor: "#44444400",
+    data: [{
+      type: "doughnut",
+      indexLabelFontColor: "#FFF",
+      startAngle: 60,
+      //innerRadius: 60,
+      indexLabelFontSize: 17,
+      indexLabel: "{label} - #percent%",
+      toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+      dataPoints: [
+        { y: map.melhorar, label: "A melhorar" },
+        { y: map.mediano, label: "Mediano" },
+        { y: map.bom, label: "Bom" },
+        { y: map.mb, label: "Muito bom" },
+        { y: map.excelente, label: "Excelente" }
+      ]
+    }]
+  });
+  return chart;
+}
+
+
+function checkPosition(ponto) {
+  let percent = Math.round((ponto / 15) * 100);
+  if (percent < 30) {
+    map.melhorar += 1;
+  }
+  else if (percent >= 30 && percent < 50) {
+    map.mediano += 1;
+  }
+  else if (percent >= 50 && percent < 70) {
+    map.bom += 1;
+  }
+  else if (percent >= 70 && percent < 90) {
+    map.mb += 1;
+  }
+  else {
+    map.excelente += 1;
+  }
+
+}    

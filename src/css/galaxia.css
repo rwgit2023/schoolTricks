@@ -14,10 +14,15 @@ body {
     padding: 0px;
     max-width: 1440px;
     margin: 0 auto;
+    
 }
 
 .cabecalho .logo {
-    width: 150px;
+    width: 20%;
+    background-color: white;
+    margin-top: 5%;
+    border-radius: 50%;
+    margin-left: 5%;
 
 }
 
@@ -77,41 +82,38 @@ body {
 /* ------------------------------------------------------------------------------ */
 
 .tabela {
-
+    
     background-color: rgb(51, 52, 54);
     text-align: center;
-    width: 60%;
-    /*      */
-    /* height: 50%; */
+    width: 50%;
+    /* height: 10%; */
 
 }
-
-table {
+table{
     border: 1px solid rgb(204, 248, 7);
     width: 100%;
-
+    
+    
 }
-
-td {
+td{
     /* background-color: white; */
     color: rgb(204, 248, 7);
     font-weight: bold;
-    padding: 3%;
-
-
+    padding: 1.5%;
+   
+   
 }
-
-td input {
+td input{
 
     width: 70%;
     height: 50px;
     min-height: 30px;
-    padding-right: 30px;
+    padding-right: 30px; 
     text-align: center;
     font-size: 17px;
 }
 
-.escrita {
+.escrita{
     width: 70%;
     height: 50px;
     border: 2px solid yellow;
@@ -119,32 +121,12 @@ td input {
 }
 
 
-.rasp {
+.rasp{
     width: 30%;
     height: 50px;
     border: 2px solid rgb(204, 248, 7);
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -15,29 +15,29 @@ const spot10 = document.getElementById('num10');
 
 num1 = (Math.floor(Math.random() * 10) + 1)
 num2 = (Math.floor(Math.random() * 10) + 1)
-spot1.textContent = (num1 + '      +      ' + num2)
-var correto1 = num1 + num2
+spot1.textContent = (num1 + '      x      ' + num2)
+var correto1 = num1 * num2
 
 
 num3 = (Math.floor(Math.random() * 10) + 1)
 num4 = (Math.floor(Math.random() * 10) + 1)
-spot2.textContent = (num3 + '      +      ' + num4)
-var correto2 = num3 + num4
+spot2.textContent = (num3 + '      x      ' + num4)
+var correto2 = num3 * num4
 
 num5 = (Math.floor(Math.random() * 10) + 1)
 num6 = (Math.floor(Math.random() * 10) + 1)
-spot3.textContent = (num5 + '      +      ' + num6)
-var correto3 = num5 + num6
+spot3.textContent = (num5 + '      x      ' + num6)
+var correto3 = num5 * num6
 
 num7 = (Math.floor(Math.random() * 10) + 1)
 num8 = (Math.floor(Math.random() * 10) + 1)
-spot4.textContent = (num7 + '      +      ' + num8)
-var correto4 = num7 + num8
+spot4.textContent = (num7 + '      x      ' + num8)
+var correto4 = num7 * num8
 
 num9 = (Math.floor(Math.random() * 10) + 1)
 num10 = (Math.floor(Math.random() * 10) + 1)
-spot5.textContent = (num9 + '      +      ' + num10)
-var correto5 = num9 + num10
+spot5.textContent = (num9 + '      x      ' + num10)
+var correto5 = num9 * num10
 
 i = 0
 
