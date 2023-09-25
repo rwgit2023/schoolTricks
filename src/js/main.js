@@ -32,7 +32,7 @@ botaoEnviar.addEventListener('click', function(event) {
 
     
     // Exibe o valor digitado na tela
-    resultado.textContent = 'Olá ' + valorNomeDigitado +', você quer participar do nosso desafio? Tenho certeza que vai arrazar!!!';
+    resultado.textContent = 'Olá ' + valorNomeDigitado +'. Escolha uma das opções acima Mario - Dinossauro - Galaxia.   Bom jogo!!!';
     console.log(resultado)
 
     nome_sobrenome.value = ''

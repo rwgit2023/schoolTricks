@@ -3,7 +3,22 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-image: url('../imagens/home.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: cover;     
+}
+
+.glass-container {
+    background: rgba(0,0,0, 0.9); /* Adjust opacity as needed */    
+    position: absolute;
+    width: 100%;
+    height: 100vh;      
+    position: fixed;
+    min-height: 100vh;  
+    text-align: center;
+    z-index: -1;
 }
 
 .cabecalho {
@@ -41,66 +56,50 @@ body {
 .cabecalho nav li a:hover {
     background-color: #d5011d;
 }
+/* ----------------------------------------------------------------------------- */
 
+/* ----------------------------------------------------------------- */
 
-.fundo-video {
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+.container {
+    border: px solid yellow;
     display: flex;
+    flex-direction: row;
+    margin: 3%;
+}
+
+.form {    
+    border: px solid blue;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
+    
 }
 
-.fundo-video .video {
-    height: 100vh;
-}
-
-.fundo-video::after {
-    content: "";
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
-}
-
-
-form {
-    margin: 150px 0;
-    background-color: red;
-
-
-}
-
-form label,
-form p,
-fieldset {
-    display: block;
+.form label,
+.form p {
     color: white;
-    font-size: 50px;
-    margin: 0 0 0 50px;
-
+    font-size: 25pt;    
 }
 
 .input-padrao {
     display: block;
-    margin: 0 30px 20px 50px;
-    padding: 15px 25px;
-    width: 50%;
+    padding: 3%;
+    width: 80%;
     border-radius: 50px;
+    margin: auto;
 }
 
-.container .enviar {
-    margin: 40px 0 0 250px;
-    width: 20%;
-    padding: 15px 0;
+.enviar {
+    display: block;
+    margin: 3% auto;
+    width: 30%;
+    padding: 2%;
     background-color: rgb(76, 165, 96);
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 18pt;
     border: none;
     border-radius: 50px;
     transition: 1s all;
@@ -115,22 +114,19 @@ fieldset {
 }
 
 .modal {
-    position: fixed;
-    width: 600px;
-    margin: -550px 0 0 1050px;
-    /* background-color: rgba(52, 52, 50, 0.749); */
-    opacity: 0;
-    visibility: hidden;
+    border: px solid pink;    
+    width: 50%;
+    height: 30%;    
+    align-items: center;
 }
-
+.modal img{
+    width: 60%;
+}
 .conteudo-modal {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    border-radius: 5px;
-    /* gap: 15px; */
-    pointer-events: none;
+    border-radius: 5px;    
 }
 
 
@@ -148,8 +144,6 @@ fieldset {
 
 .modal iframe {
     border-width: 0;
-    width: 640px;
-    height: 360px;
 }
 
 .modal.aberto {
@@ -158,11 +152,11 @@ fieldset {
 }
 
 .modal #menssage {
-
+    border: px solid red;
+    width: 15%;
+    right: 15%;
+    height: 35%;
+    position: absolute;
     color: white;
-    font-size: 22px;
-    max-width: 50%;
-    margin: -270px 0 10px 110px;
-    opacity: 2;
-
+    font-size: 15pt;
 }

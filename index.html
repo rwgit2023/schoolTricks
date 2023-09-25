@@ -22,6 +22,9 @@
 		
 	</head>
 	<body>
+		<div class="glass-container">
+			<!-- Content goes here -->
+		</div>
 
 		<div vw class="enabled">
 			<div vw-access-button class="active"></div>
@@ -33,11 +36,6 @@
 		  <script>
 			new window.VLibras.Widget('https://vlibras.gov.br/app');
 		  </script>
-
-
-		<div class="fundo-video">
-			<img src="./src/imagens/home.jpeg" alt="home-fundo">
-		</div>
 
 		<header class="cabecalho">
 			<a>
@@ -55,34 +53,35 @@
 		</header>
 
 		<main class="container">
+
+			<div class="form">
+
+				<form >
+					<label for="nome_sobrenome">Como você se chama?</label>
+					<input type="text" id="nome_sobrenome" class="input-padrao" required placeholder="Nome Completo">
+	
+					<label for="idade">Quantos anos você tem?</label>
+					<input type="text" id="idade" class="input-padrao" required placeholder="Idade">
+					
+					<button class="enviar" type="submit">Enviar</button>
+				</form>
+	
+
+			</div>
 			
-			<form >
-                <label for="nome_sobrenome">Como você se chama?</label>
-                <input type="text" id="nome_sobrenome" class="input-padrao" required placeholder="Nome Completo">
-
-				<label for="idade">Quantos anos você tem?</label>
-                <input type="text" id="idade" class="input-padrao" required placeholder="Idade">
-				
-				<button class="enviar" type="submit">Enviar</button>
-			</form>
-
+			
 			<p id="resultado"></p>
 
 			<div class="modal">
 
 				<div class="conteudo-modal">
-					<iframe id = "professora" width="640" height="427" src="./src/imagens/imagemprofessora.png"  style="z-index: 0;" title = "Imagem professora" frameborder = '1' allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+					<img id = "professora" src="./src/imagens/imagemprofessora.png" title = "Imagem professora"/>
 					
 					<p id="menssage" style="z-index: 1;"> </p>
-					
-		
+							
 					
 				</div>
 
-				
-
-
-				
 			</div>
 
 		</main>
