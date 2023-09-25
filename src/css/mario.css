@@ -3,10 +3,19 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
-    
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-
+.glass-container {
+    background: rgba(0,0,0, 0.9); /* Adjust opacity as needed */    
+    position: absolute;
+    width: 100%;
+    height: 100vh;      
+    position: fixed;
+    min-height: 100vh;  
+    text-align: center;
+    z-index: -1;
+}
 .cabecalho {
     display: flex;
     justify-content: space-between;
