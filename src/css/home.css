@@ -63,7 +63,7 @@ body {
     border: px solid yellow;
     display: flex;
     flex-direction: row;
-    margin: 3%;
+    margin: 9% 3% 3% 3%;
 }
 
 .form {    
@@ -156,6 +156,7 @@ body {
     width: 15%;
     right: 15%;
     height: 35%;
+    margin-top: 3%;
     position: absolute;
     color: white;
     font-size: 15pt;
