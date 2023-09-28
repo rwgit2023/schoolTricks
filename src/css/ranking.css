@@ -96,5 +96,13 @@ body {
 /* ------------------------------------------------------------------------------ */
 
 #chartContainer {
-  width: 70%;
+  width: 80%;
+}
+
+
+#alteracoes{
+
+  position: absolute;
+  margin-top: 70%;
+  background-color: white;
 }
