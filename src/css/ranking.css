@@ -1,10 +1,10 @@
 body {
-  font-family: 'Poppins';  
+  font-family: 'Poppins';
   overflow-y: auto;
   overflow-x: hidden;
-  background-image: url('../imagens/ranking_1.png') ;
+  background-image: url('../imagens/ranking_1.png');
   background-repeat: no-repeat;
-  background-size: cover;   
+  background-size: cover;
 }
 
 .glass-container {
@@ -56,17 +56,6 @@ body {
 }
 
 /* ------------------------------------------------------------------------------ */
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background-color: #444;
-
-}
-
-/* ------------------------------------------------------------------------------ */
 .fundo-video {
   position: absolute;
   z-index: -1;
@@ -95,14 +84,63 @@ body {
 
 /* ------------------------------------------------------------------------------ */
 
+
+.container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 #chartContainer {
   width: 80%;
+  height: 40%;
+  /* Defina a altura que desejar */
+  display: block;
+  position: relative;
+  background-color: lightblue;
+  /* Apenas para fins de visualização */
+}
+
+#alteracoes {
+  display: flex;
+  height: 8%;
+  /* O restante do espaço disponível */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  margin-left: 5%;
+
+
+
 }
 
 
-#alteracoes{
 
-  position: absolute;
-  margin-top: 70%;
-  background-color: white;
+
+
+
+
+.calcular {
+  width: 20%;
+  height: 80%;
+  /* padding: 1% 0; */
+  background-color: rgb(76, 165, 96);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.3s all;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-right: 10%;
+  }
+
+.calcular:hover {
+  background-color: rgb(165, 49, 11);
+  transform: scale(1.2);
 }
