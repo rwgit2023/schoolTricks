@@ -1,100 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./src/imagens/novo.png" type="image/x-icon">
 
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
 
-		<link rel="stylesheet" href="./src/css/reset.css">
+	<link rel="stylesheet" href="./src/css/reset.css">
 
-		<link rel="stylesheet" href="./src/css/sobre.css">
+	<link rel="stylesheet" href="./src/css/sobre.css">
 
 
-		<title>School Tricks</title>
-		
-	</head>
-	<body>
-		<div class="glass-container">
-			<!-- Content goes here -->
+	<title>School Tricks</title>
+
+</head>
+
+<body>
+	<div class="glass-container">
+		<!-- Content goes here -->
+	</div>
+
+	<div vw class="enabled">
+		<div vw-access-button class="active"></div>
+		<div vw-plugin-wrapper>
+			<div class="vw-plugin-top-wrapper"></div>
+		</div>
+	</div>
+	<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+	<script>
+		new window.VLibras.Widget('https://vlibras.gov.br/app');
+	</script>
+
+	<header class="cabecalho">
+
+		<a href="index.html">
+			<img class="logo" src="./src/imagens/logo_preto.png" alt="logo-projeto" />
+		</a>
+
+
+		<nav>
+			<ul class="menu">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="ranking.html">Area - Pedagógica</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+	<main class="container">
+
+		<div class="desenvolvedores">
+			<h1>Quem Somos</h1>
+			<br>
+
+
+			<p>Olá!! Somos equipe MATEA, nosso grupo contém três futuras pedagogas que estão no 8° Período e dois
+				desenvolvedores graduados em Sistemas de informações pela FAI e Engenharia de Computação pelo Inatel.
+				Juntos criamos um recurso digital, que também está disponível em material concreto.
+			</p>
+			<p>Eles servem para auxiliar crianças com TEA no ensino das operações básicas da matemática.</p>
+			<br>
+			<br>
+
+			<h1>Pedagogas</h1>
+			<br>
+			<img id="professora" src="./src/imagens/imagemprofessora.png" title="Imagem professora" />
+
 		</div>
 
-		<div vw class="enabled">
-			<div vw-access-button class="active"></div>
-			<div vw-plugin-wrapper>
-			  <div class="vw-plugin-top-wrapper"></div>
-			</div>
-		  </div>
-		  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-		  <script>
-			new window.VLibras.Widget('https://vlibras.gov.br/app');
-		  </script>
 
-		<header class="cabecalho">
-			
-            <a href="index.html">
-                <img class="logo" src="./src/imagens/logo_preto.png" alt="logo-projeto" />
-            </a>
-			
-			
-			<nav>
-				<ul class="menu">
-					<li><a href="./index.html">Home</a></li>
-					<li><a href="ranking.html">Area - Pedagógica</a></li>
-				</ul>
-			</nav>
-		</header>
 
-	
+		<div class="pedagogas">
+			<br>
+			<h1>Desenvolvedores</h1>
 
-		<main class="container">
+			<img id="professora" src="./src/imagens/imagemprofessora.png" title="Imagem professora" />
 
-			<div class="desenvolvedores">
-				<h1>AQUI VOU MOSTRAR OS DEV's</h1>
+			<br>
+			<br>
 
-				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+			<h3>Álvaro A. Lopes -> <a href="https://github.com/alvarolopes2021">GitHub</a></h3>
+			<h3>Ronan W. Cassemiro -> <a href="https://github.com/rwgit2023">GitHub</a> </h3>
 
-				<img id = "professora" src="./src/imagens/imagemprofessora.png" title = "Imagem professora"/>
-
-			</div>
+			<br><br>
+		</div>
+	</main>
 
 
 
-			<div class="pedagogas">
-				<h1>AQUI VOU MOSTRAR AS PEDAGOGAS</h1>
-
-				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years 
-					old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum 
-					passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 
-					"de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the 
-					Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-
-					<img id = "professora" src="./src/imagens/imagemprofessora.png" title = "Imagem professora"/>
-
-
-					
-
-			</div>
-		</main>
-
-		
-		
-		
-		
-		
-		
 
 
 
-	
 
-	
-		<script src="./src/js/main.js"></script>
-		<script src="./src/service/service.js"></script>
-		<script src="./src/constants/constants.js"></script>
-	</body>
+
+
+
+
+
+
+	<script src="./src/js/main.js"></script>
+	<script src="./src/service/service.js"></script>
+	<script src="./src/constants/constants.js"></script>
+</body>
+
 </html>

@@ -16,9 +16,6 @@
 
 	<link rel="stylesheet" href="./src/css/ranking.css">
 
-
-	<link rel="stylesheet" href="./src/css/rankingResponsivo.css">
-
 	<title>School Tricks</title>
 </head>
 
@@ -59,11 +56,11 @@
 
 
 		<div id="alteracoes">
-			<h1>Aqui ficará o ultimo player</h1>
+			<h1 id="nome_jogador">Jogador atual: </h1>
 			<button id="limparStorage" type="submit">Reiniciar Game</button>
-		</div>										
-		
-		
+		</div>
+
+
 	</main>
 
 
@@ -75,23 +72,27 @@
 	<script src="./src/service/service.js"></script>
 	<script src="./src/constants/constants.js"></script>
 	<script src="./src/js/canvasjs.min.js"></script>
-	
+
 	<script>
 		window.onload = function () {
 
 			let chart = createChart();
 			chart.render();
 
+
+			var nome_jogador = document.getElementById('nome_jogador');
+
+			let atual = getLocalStorageValue(CURRENTUSER);
+			if (atual == null){
+				nome_jogador.innerHTML = "Ninguém jogou";
+			}
+			else{
+				nome_jogador.innerHTML += atual;
+			}
 		}
+
+		
 	</script>
-
-
-
-
-
-
-
-
 
 </body>
 

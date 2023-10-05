@@ -9,7 +9,6 @@ let map = {
 
 
 // Chamada da função para gerar as barras
-gerarBarras();
 
 function createChart() {
 
@@ -44,7 +43,8 @@ function createChart() {
       "#03fc07"
     ]);
 
-  var chart = new CanvasJS.Chart("chartContainer", {
+  // let é de escopo de função
+  let chart = new CanvasJS.Chart("chartContainer", {
     animationEnabled: true,
     colorSet: "greenShades",
     title: {
@@ -99,17 +99,17 @@ function checkPosition(ponto) {
     map.excelente += 1;
   }
 
-}    
+}
 
 
 var limparStorage = document.getElementById('limparStorage')
 
 
-limparStorage.addEventListener('click', function(event) {
+limparStorage.addEventListener('click', function () {
   console.log("Botão clicado!")
-  event.preventDefault();
+  localStorage.clear();
+  location.reload(true);
 })
-
 
 
 
