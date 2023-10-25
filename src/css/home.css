@@ -1,3 +1,8 @@
+html {
+    background-image: url('../imagens/home.jpeg');
+    background-repeat: no-repeat;
+}
+
 body {
     font-family: 'Poppins';
     margin: 0;
@@ -5,18 +10,16 @@ body {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    background-image: url('../imagens/home.jpeg') ;
-    background-repeat: no-repeat;
-    background-size: cover;     
 }
 
 .glass-container {
-    background: rgba(0,0,0, 0.9); /* Adjust opacity as needed */    
+    background: rgba(0, 0, 0, 0.9);
+    /* Adjust opacity as needed */
     position: absolute;
     width: 100%;
-    height: 100vh;      
+    height: 100vh;
     position: fixed;
-    min-height: 100vh;  
+    min-height: 100vh;
     text-align: center;
     z-index: -1;
 }
@@ -38,6 +41,10 @@ body {
 
 }
 
+#hamb {
+    cursor: pointer;
+}
+
 .cabecalho .menu {
     display: flex;
     align-items: center;
@@ -56,6 +63,7 @@ body {
 .cabecalho nav li a:hover {
     background-color: #d5011d;
 }
+
 /* ----------------------------------------------------------------------------- */
 
 
@@ -66,20 +74,20 @@ body {
     margin: 9% 3% 3% 3%;
 }
 
-.form {    
+.form {
     border: px solid blue;
     width: 50%;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    
+
 }
 
 .form label,
 .form p {
     color: white;
-    font-size: 25pt;    
+    font-size: 25pt;
 }
 
 .input-padrao {
@@ -113,20 +121,22 @@ body {
 }
 
 .modal {
-    border: px solid pink;    
+    border: px solid pink;
     width: 50%;
-    height: 30%;    
+    height: 30%;
     align-items: center;
 }
-.modal img{
+
+.modal img {
     width: 60%;
-    
+
 }
+
 .conteudo-modal {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;    
+    border-radius: 5px;
 }
 
 
@@ -160,4 +170,127 @@ body {
     position: absolute;
     color: white;
     font-size: 15pt;
+}
+
+.hidden{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+
+    .modal {
+        border: px solid pink;
+        width: 80%;
+        height: 50%;
+    }
+
+    .modal #menssage {
+        border: px solid red;
+        width: 25%;
+        height: 20%;
+        margin: 2% auto auto auto;
+        position: absolute;
+        color: white;
+        font-size: 12pt;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .cabecalho {
+        border: px solid #f03a17;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20%;
+    }
+
+    .cabecalho .logo {
+        width: 100%;
+    }
+
+    .cabecalho a {
+        border: px solid salmon;
+        width: 20%;
+    }
+
+    .cabecalho a:first-child {
+        display: inline;
+        align-items: start;
+        cursor: pointer;
+    }
+
+    h2 {
+        border: px solid blue;
+        color: yellow;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .opened{
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    nav::-webkit-scrollbar {
+        width: 1%;
+    }
+
+    nav::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(33, 33, 244, 1);
+        background-color: rgba(33, 33, 244, 0.4);
+        border-radius: 10px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba(1, 0, 0, 0.4);
+    }
+
+    .container {
+        border: px solid red;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    .form label {
+        font-size: 14pt;
+    }
+
+    .enviar {
+        font-size: 12pt;
+        width: 40%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .modal {
+        border: px solid pink;
+        width: 80%;
+        height: 50%;
+    }
+
+    .modal #menssage {
+        border: px solid red;
+        width: 30%;
+        left: 25%;
+        height: 15%;
+        margin: 2% auto auto auto;
+        position: absolute;
+        color: white;
+
+        font-size: 8pt;
+    }
+
 }
