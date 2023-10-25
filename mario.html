@@ -26,7 +26,7 @@
 	<div class="glass-container">
 		<!-- Content goes here -->
 	</div>
-	
+
 	<div vw class="enabled">
 		<div vw-access-button class="active"></div>
 		<div vw-plugin-wrapper>
@@ -50,7 +50,10 @@
 
 			<img class="logo" src="./src/imagens/logo_preto.png" alt="logo-projeto" />
 		</a>
-		<nav>
+		<div>
+			<h2 id="hamb" onclick="openMenu()">&#8801;</h2>
+		</div>
+		<nav id="myMenu">
 			<ul class="menu">
 				<li><a href="./index.html"> Home </a></li>
 				<li><a href="ranking.html"> Area - Pedagógica </a></li>
@@ -93,25 +96,38 @@
 				</tr>
 			</table>
 		</div>
-		
+
 		<div class="right">
-			
+
 			<div class="modal">
 				<div class="conteudo-modal">
 					<p id="menssage" style="z-index: 1;"> </p>
-					<img  id="mario" src="./src/imagens/mario.png" style="z-index: 0;" title="Imagem Mario" />					
+					<img id="mario" src="./src/imagens/mario.png" style="z-index: 0;" title="Imagem Mario" />
 				</div>
 			</div>
 			<button class="calcular" type="submit">Calcular</button>
 			<button class="limpar" type="submit">Próximo</button>
-	
+
 		</div>
-		
+
 	</main>
 	<script src="./src/js/marioIndex.js"></script>
 	<script src="./src/js/ranking.js"></script>
 	<script src="./src/service/service.js"></script>
 	<script src="./src/constants/constants.js"></script>
+	<script>
+		let opened = false;
+		function openMenu() {
+			let menu = document.getElementById("myMenu");
+			if (opened) {
+				menu.className = "hidden";
+			}
+			else {
+				menu.className = "opened";
+			}
+			opened = !opened;
+		}
+	</script>
 </body>
 
 </html>
