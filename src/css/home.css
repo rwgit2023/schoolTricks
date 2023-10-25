@@ -222,6 +222,13 @@ body {
         cursor: pointer;
     }
 
+    .input-padrao{
+        width: 100%;
+        padding: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
     h2 {
         border: px solid blue;
         color: yellow;
@@ -269,28 +276,29 @@ body {
     }
 
     .enviar {
-        font-size: 12pt;
-        width: 40%;
+        font-size: 15pt;
+        width: 80%;
+        padding: 3%;
         margin-top: 15%;
         margin-bottom: 15%;
     }
 
     .modal {
         border: px solid pink;
-        width: 100%;
-        height: 60%;
+        width: 110%;
+        height: 70%;
     }
 
     .modal #menssage {
         border: px solid red;
-        width: 30%;
+        width: 50%;
         left: 25%;
-        height: 15%;
-        margin: 2% auto auto auto;
+        height: 20%;
+        margin: 2% auto auto 10%;
         position: absolute;
         color: white;
 
-        font-size: 8pt;
+        font-size: 11pt;
     }
 
 }
