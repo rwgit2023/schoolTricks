@@ -1,27 +1,30 @@
+html{
+
+    background-image: url('../imagens/sobre_1.jpeg') ;
+    background-repeat: no-repeat;
+}
+
 body {
     font-family: 'Poppins';
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    background-image: url('../imagens/sobre_1.jpeg') ;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;     
 }
 
 .glass-container {
-    background: rgba(0,0,0, 0.9); 
+    background: rgba(0, 0, 0, 0.9);
+    /* Adjust opacity as needed */
     position: absolute;
     width: 100%;
-    height: 100vh;      
+    height: 100vh;
     position: fixed;
-    min-height: 100vh;  
+    min-height: 100vh;
     text-align: center;
     z-index: -1;
 }
+
 
 .cabecalho {
     display: flex;
@@ -38,6 +41,10 @@ body {
     border-radius: 50%;
     margin-left: 5%;
 
+}
+
+#hamb {
+    cursor: pointer;
 }
 
 .cabecalho .menu {
@@ -58,6 +65,7 @@ body {
 .cabecalho nav li a:hover {
     background-color: #d5011d;
 }
+
 /* ----------------------------------------------------------------------------- */
 
 
@@ -107,72 +115,129 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+
+    .modal {
+        border: px solid pink;
+        width: 80%;
+        height: 50%;
+    }
+
+    .modal #menssage {
+        border: px solid red;
+        width: 25%;
+        height: 20%;
+        margin: 2% auto auto auto;
+        position: absolute;
+        color: white;
+        font-size: 12pt;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .cabecalho {
+        border: px solid #f03a17;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20%;
+    }
+
+    .cabecalho .logo {
+        width: 100%;
+    }
+
+    .cabecalho a {
+        border: px solid salmon;
+        width: 20%;
+    }
+
+    .cabecalho a:first-child {
+        display: inline;
+        align-items: start;
+        cursor: pointer;
+    }
+
+    .input-padrao{
+        width: 100%;
+        padding: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    h2 {
+        border: px solid blue;
+        color: yellow;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .opened{
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    nav::-webkit-scrollbar {
+        width: 1%;
+    }
+
+    nav::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(33, 33, 244, 1);
+        background-color: rgba(33, 33, 244, 0.4);
+        border-radius: 10px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba(1, 0, 0, 0.4);
+    }
+
+    .container {
+        border: px solid red;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    .form label {
+        font-size: 14pt;
+    }
+
+    .enviar {
+        font-size: 15pt;
+        width: 80%;
+        padding: 3%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .modal {
+        border: px solid pink;
+        width: 110%;
+        height: 70%;
+    }
+
+    .modal #menssage {
+        border: px solid red;
+        width: 50%;
+        left: 25%;
+        height: 20%;
+        margin: 2% auto auto 10%;
+        position: absolute;
+        color: white;
+
+        font-size: 11pt;
+    }
+
+}

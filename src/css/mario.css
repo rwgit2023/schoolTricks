@@ -391,6 +391,14 @@ td input {
         background-color: rgba(1, 0, 0, 0.4);
     }
 
+    .tabela{
+        width: 80%;
+    }
+
+    .tabela input{
+        width: 100%;
+    }
+
     .container {
         border: px solid red;
         flex-direction: column;
