@@ -37,10 +37,14 @@
 
 	<header class="cabecalho">
 		<a href="index.html">
-
 			<img class="logo" src="./src/imagens/logo_preto.png" alt="logo-projeto" />
 		</a>
-		<nav>
+
+		<div>
+			<h2 id="hamb" onclick="openMenu()">&#8801;</h2>
+		</div>
+
+		<nav id="myMenu">
 			<ul class="menu">
 				<li><a href="./index.html">Home</a></li>
 				<li><a href="./sobre.html">Sobre</a></li>
@@ -74,6 +78,18 @@
 	<script src="./src/js/canvasjs.min.js"></script>
 
 	<script>
+		let opened = false;
+		function openMenu() {
+			let menu = document.getElementById("myMenu");
+			if (opened) {
+				menu.className = "hidden";
+			}
+			else {
+				menu.className = "opened";
+			}
+			opened = !opened;
+		}
+		
 		window.onload = function () {
 
 			let chart = createChart();
@@ -83,15 +99,15 @@
 			var nome_jogador = document.getElementById('nome_jogador');
 
 			let atual = getLocalStorageValue(CURRENTUSER);
-			if (atual == null){
+			if (atual == null) {
 				nome_jogador.innerHTML = "Ninguém jogou";
 			}
-			else{
+			else {
 				nome_jogador.innerHTML += atual;
 			}
 		}
 
-		
+
 	</script>
 
 </body>

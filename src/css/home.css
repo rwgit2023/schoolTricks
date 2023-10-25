@@ -277,8 +277,8 @@ body {
 
     .modal {
         border: px solid pink;
-        width: 80%;
-        height: 50%;
+        width: 100%;
+        height: 60%;
     }
 
     .modal #menssage {
