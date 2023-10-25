@@ -274,7 +274,11 @@ td input {
 
 /* -------------------------------------------------------------------------------------- */
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 600px) {
+
+    #hamb{
+        display: none;
+    }
 
     .container {
         flex-wrap: wrap;
@@ -300,6 +304,19 @@ td input {
 
     .container .botao-contas {
         background-color: #263238;
+    }
+
+    .right{
+        width: 100%;
+        border: px solid red;
+    }
+
+    .limpar{
+        width: 50%;
+    }
+
+    #menssage{
+        font-size: 10pt;
     }
 }
 
@@ -391,6 +408,19 @@ td input {
         width: 40%;
         margin-top: 15%;
         margin-bottom: 15%;
+    }
+
+    .right{
+        width: 100%;
+        border: px solid red;
+    }
+
+    .limpar{
+        width: 50%;
+    }
+
+    #menssage{
+        font-size: 10pt;
     }
 
 }

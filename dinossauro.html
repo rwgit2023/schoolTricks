@@ -52,7 +52,10 @@
 
 			<img class="logo" src="./src/imagens/logo_preto.png" alt="logo-projeto" />
 		</a>
-		<nav>
+		<div>
+			<h2 id="hamb" onclick="openMenu()">&#8801;</h2>
+		</div>
+		<nav id="myMenu">
 			<ul class="menu">
 				<li><a href="./index.html"> Home </a></li>
 				<li><a href="ranking.html"> Area - Pedagógica </a></li>
@@ -115,6 +118,19 @@
 	<script src="./src/js/ranking.js"></script>
 	<script src="./src/service/service.js"></script>
 	<script src="./src/constants/constants.js"></script>
+	<script>
+		let opened = false;
+		function openMenu() {
+			let menu = document.getElementById("myMenu");
+			if (opened) {
+				menu.className = "hidden";
+			}
+			else {
+				menu.className = "opened";
+			}
+			opened = !opened;
+		}
+	</script>
 </body>
 
 </html>
